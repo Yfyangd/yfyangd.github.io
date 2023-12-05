@@ -20,11 +20,6 @@ This course aims to provide students with a deep understanding of the fundamenta
 * Final Project (40%): Students must select a computer vision-related topic and prepare a research report along with an implemented project. Evaluation criteria include a clear understanding of the problem, innovativeness, practicality of the solution, completeness, and efficiency of the technical implementation.
 
 ## Progress
----
-Week: "1", "2", "3"
-Progress: "Computer Vision Fundamentals", "Computer Vision Basics", "Image Feature Extraction"
-Instructor Hour: "3hr", "3hr", "3hr"
----
 
 | Week | Date       | Progress, Content, Topics         | Instructor Hours |
 |------|------------|----------------------------------|------------------|
