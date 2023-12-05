@@ -14,6 +14,7 @@ This course aims to provide students with a deep understanding of the fundamenta
 * Sensitivity and analytical skills toward emerging technologies and trends.
 * Capability to conduct independent research and development, possessing teamwork and project management abilities.
 * Innovative thinking and problem-solving skills, with the capacity to apply learned knowledge to promote technological innovation and societal progress.
+
 ## The assessment for this course
 * Assignments (30%): Including programming tasks, literature review reports, etc.
 * Midterm Report (30%): Students are required to choose a computer vision-related paper published within the last 3 years and compose a research report. Additional credit will be given if it includes a demo and technical implementation.
