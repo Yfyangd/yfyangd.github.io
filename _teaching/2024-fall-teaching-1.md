@@ -8,6 +8,4 @@ date: 2024-09-01
 location: "HsinChu, Taiwan"
 ---
 
-AI in Semiconductor.
-
-Coming Soon
+Coming Soon!
