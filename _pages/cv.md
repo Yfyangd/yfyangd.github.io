@@ -9,6 +9,17 @@ redirect_from:
 
 {% include base_path %}
 
+<script>
+ window.difyChatbotConfig = { 
+  token: 'FLDVs1lMPmClxxJW'
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="FLDVs1lMPmClxxJW"
+ defer>
+</script>
+
 Education
 ======
 * Ph.D in College of Electrical Engineering and Computer Science, National Tsing Hua University
