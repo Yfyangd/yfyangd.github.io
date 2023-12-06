@@ -14,3 +14,14 @@ author_profile: true
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+<script>
+ window.difyChatbotConfig = { 
+  token: 'FLDVs1lMPmClxxJW'
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="FLDVs1lMPmClxxJW"
+ defer>
+</script>
