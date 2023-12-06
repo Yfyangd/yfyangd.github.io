@@ -2,7 +2,7 @@
 title: "Computer Vision"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/2024-spring-teaching-1
+permalink: /teaching/2024-03-01-spring-teaching-1
 venue: "Institute of Artificial Intelligence Innovation, NYCU"
 date: 2024-03-01
 location: "HsinChu, Taiwan"
