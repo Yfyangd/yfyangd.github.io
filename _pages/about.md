@@ -25,6 +25,4 @@ Prior to my current role, I had the opportunity to serve as a data scientist and
 
 Furthermore, I've been deeply passionate about exploring the intersection of AI and artistic creativity. My efforts have been dedicated to understanding and unlocking the potential for expansion in artistic realms through collaboration between AI technologies and human experts.
 
-Welcome to use the personalized assistant **chatbot** in the bottom right corner. Feel free to ask any questions you're interested in!
-
-At present, I am actively seeking enthusiastic and driven graduate and doctoral students who share a similar interest in delving into this fascinating research domain. If you're someone passionate about exploring the synergy between AI and creativity, I warmly welcome you to connect with me.
+At the moment, I'm actively seeking passionate and motivated graduate and doctoral students who share a keen interest in exploring this captivating research domain. If you're enthusiastic about investigating the intersection of AI and creativity, I wholeheartedly encourage you to reach out to me directly or utilize the personalized assistant available as a **chatbot** in the bottom right corner. Don't hesitate to inquire about any topics that pique your interest!
