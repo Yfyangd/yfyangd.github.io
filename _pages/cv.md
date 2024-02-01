@@ -27,11 +27,11 @@ Education
 
 Awards
 ======
-* 2023 TSMC ESG Competitioni **Best Award**
+* 2023 TSMC ESG Competition **Best Award**
 * 2023 CVPR (Vancouver) TechArt Piece Selected for Exhibition
-* 2022 Coolaboration for Internal Control Excellence Symposium **First Award**
+* 2022 TSMC Collaboration for Internal Control Excellence Symposium **First Award**
 * 2021 Linz Electronic Arts Festival (Austria) TechArt Piece Selected for Exhibition.
-* 2021 National Tsing Hua University Internaltional Paper **Best Award**
+* 2021 National Tsing Hua University International Paper **Best Award**
 * 2020 SEMI Advanced Semiconductor Manufacturing Conference **Best Paper Award**
 * 2020 TSMC Machine Learning Competition **First Runner-up**
 * 2018 TSMC Kaggle Competition **First Award**
