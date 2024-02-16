@@ -25,7 +25,7 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 
 ## Grading
-* Assignments (50%): Including programming assignments, literature review reports, etc.
+* Assignments (50%): Including programming assignments, homeworks, etc.
 * Final Project (40%): Including midterm project proposal, midterm report, final project presentation, and the final project report. Each group is restricted to a maximum of 3 members. Students are required to select a computer vision-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.
 * Class Participation (10%): -1 each absent.
 
