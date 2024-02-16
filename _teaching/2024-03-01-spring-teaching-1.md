@@ -15,16 +15,30 @@ This course aims to provide students with a deep understanding of the fundamenta
 * Capability to conduct independent research and development, possessing teamwork and project management abilities.
 * Innovative thinking and problem-solving skills, with the capacity to apply learned knowledge to promote technological innovation and societal progress.
 
-## The assessment for this course
-* Assignments (30%): Including programming tasks, literature review reports, etc.
-* Midterm Report (30%): Students are required to choose a computer vision-related paper published within the last 3 years and compose a research report. Additional credit will be given if it includes a demo and technical implementation.
-* Final Project (40%): Students must select a computer vision-related topic and prepare a research report along with an implemented project. Evaluation criteria include a clear understanding of the problem, innovativeness, practicality of the solution, completeness, and efficiency of the technical implementation.
+## Prerequisites
+* Proficiency in Python
+  * All class assignments will be in Python. If you have a lot of programming experience but in a different language (e.g. C++/Matlab/Javascript) you will probably be fine.
+* College Calculus, Linear Algebra
+  * You should be comfortable taking derivatives and understanding matrix vector operations and notation.
+* Basic Probability and Statistics
+  * You should know basics of probabilities, gaussian distributions, mean, standard deviation, etc.
+
+
+## Grading
+* Assignments (50%): Including programming assignments, literature review reports, etc.
+* Final Project (40%): Including midterm project proposal, midterm report, final project presentation, and the final project report. Each group is restricted to a maximum of 3 members. Students are required to select a computer vision-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.
+* Class Participation (10%): -1 each absent.
+
+## Office Hours
+* Monday 11:00-12:00 am
+* Room: Engineering Building-6 (374)
+
 
 ## Progress
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 2/20       | Introduction                      | Lec0, Lec1       |          |            |
+| 1    | 2/20       | Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), Lec1 |          |            |
 | 2    | 2/27       | Image Formattion                  | Lec2             | HW1: Image Sensing Pipeline  |            |
 | 3    | 3/5        | Image Features                    | Lec3             | HW2: Harris Corner Detection |            |
 | 4    | 3/12       | Camera Calibration                | Lec4             | HW3: Camera Calibration      | Group Form Due |
@@ -34,11 +48,18 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 8    | 4/9        | Regularization and Optimization   | Lec8             |          |            |
 | 9    | 4/16       | Project Proposal at Midterm       |                  |          | Project Proposal Due |
 | 10   | 4/23       | Recurrent Neural Networks/LSTM    | Lec9             | HW7: RNN/LSTM for IMDB |            |
-| 11   | 4/30       | Attention and Transformers        | Lec10            | HW8: GCNet/SENET for Image Classification |            |
+| 11   | 4/30       | Attention and Transformers        | Lec10            | HW8: GCNet/SENET for ImageNet |            |
 | 12   | 5/7        | Generative AI                     | Lec11            | HW9: Diffusion Model |            |
 | 13   | 5/14       | VLM and LMM                       | Lec12            | HW10: LLM Application |            |
 | 14   | 5/21       | 3D Vision                         | Lec13            |          |            |
 | 15   | 5/28       | CV Application in Industry        | Lec14            |          |            |
 | 16   | 6/4        | Final Project Presentation        |                  |          | Final Report Due |
 
-## Progress
+## Resource
+* [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
+* [Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning)
+
+# Textbook
+* [Programming Computer Vision with Python](https://www.amazon.com/Programming-Computer-Vision-Python-algorithms/dp/1449316549)
+* [Computer Vision: Algorithms and Applications](http://szeliski.org/Book/)
+
