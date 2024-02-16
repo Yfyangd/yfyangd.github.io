@@ -22,21 +22,23 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 ## Progress
 
-| Week | Date       | Progress, Content, Topics         | Instructor Hours |
-|------|------------|----------------------------------|------------------|
-| 1    |            | Computer Vision Fundamentals      | 3hr              |
-| 2    |            | Computer Vision Basics            | 3hr              |
-| 3    |            | Image Feature Extraction          | 3hr              |
-| 4    |            | Training Model for Downstream Task| 3hr              |
-| 5    |            | The Evolution and Development of Computer Vision | 3hr |
-| 6    |            | Transfer Learning and Pre-trained Models | 3hr       |
-| 7    |            | Image Object Detection and Tracking | 3hr            |
-| 8    |            | Midterm Project Presentation      | 3hr              |
-| 9    |            | Attention Mechanism               | 3hr              |
-| 10   |            | Lightweight Model                 | 3hr              |
-| 11   |            | Generative AI – AE/VAE/GAN/Diffusion Model | 3hr    |
-| 12   |            | 3D Reconstruction and Representation | 3hr            |
-| 13   |            | Visual Language Model             | 3hr              |
-| 14   |            | Multimodal Model                  | 3hr              |
-| 15   |            | Application in Industry           | 3hr              |
-| 16   |            | Final Project Presentation        | 3hr              |
+| Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
+|------|------------|-----------------------------------|------------------|----------|------------|
+| 1    | 2/20       | Introduction                      | Lec0, Lec1       |          |            |
+| 2    | 2/27       | Image Formattion                  | Lec2             | HW1: Image Sensing Pipeline  |            |
+| 3    | 3/5        | Image Features                    | Lec3             | HW2: Harris Corner Detection |            |
+| 4    | 3/12       | Camera Calibration                | Lec4             | HW3: Camera Calibration      | Group Form Due |
+| 5    | 3/19       | Stereo Vision                     | Lec5             | HW4: Homography Transformation |            |
+| 6    | 3/26       | Image Segmentation                | Lec6             | HW5: Otsu Thresholding and Gaussian Adaptive Thresholding |            |
+| 7    | 4/2        | Image Classification              | Lec7             | HW6: NN/CNN for ImageNet     |            |
+| 8    | 4/9        | Regularization and Optimization   | Lec8             |          |            |
+| 9    | 4/16       | Project Proposal at Midterm       |                  |          | Project Proposal Due |
+| 10   | 4/23       | Recurrent Neural Networks/LSTM    | Lec9             | HW7: RNN/LSTM for IMDB |            |
+| 11   | 4/30       | Attention and Transformers        | Lec10            | HW8: GCNet/SENET for Image Classification |            |
+| 12   | 5/7        | Generative AI                     | Lec11            | HW9: Diffusion Model |            |
+| 13   | 5/14       | VLM and LMM                       | Lec12            | HW10: LLM Application |            |
+| 14   | 5/21       | 3D Vision                         | Lec13            |          |            |
+| 15   | 5/28       | CV Application in Industry        | Lec14            |          |            |
+| 16   | 6/4        | Final Project Presentation        |                  |          | Final Report Due |
+
+## Progress
