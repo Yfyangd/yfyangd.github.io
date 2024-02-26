@@ -38,8 +38,8 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 2/20       | Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), Lec1 |          |            |
-| 2    | 2/27       | Image Formattion                  | Lec2             | HW1: Image Sensing Pipeline  |            |
+| 1    | 2/20       | Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), [Lec1](https://drive.google.com/file/d/1QsX6b0WayO03aWGQnCaf4AHe9iqWKk2a/view?usp=drive_link) |          |            |
+| 2    | 2/27       | Image Formattion                  | [Lec2](https://drive.google.com/file/d/1UPNaHjPwct7LnUYOKokV7NMdUurxmY27/view?usp=drive_link)             | HW1: Image Sensing Pipeline  |            |
 | 3    | 3/5        | Image Features                    | Lec3             | HW2: Harris Corner Detection |            |
 | 4    | 3/12       | Camera Calibration                | Lec4             | HW3: Camera Calibration      | Group Form Due |
 | 5    | 3/19       | Stereo Vision                     | Lec5             | HW4: Homography Transformation |            |
