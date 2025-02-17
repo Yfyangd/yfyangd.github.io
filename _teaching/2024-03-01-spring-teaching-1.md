@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate course"
 permalink: /teaching/2024-03-01-spring-teaching-1
 venue: "Institute of Artificial Intelligence Innovation, NYCU"
-date: 2024-03-01
+date: 2025-03-01
 location: "HsinChu, Taiwan"
 ---
 
@@ -25,8 +25,9 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 
 ## Grading
-* Assignments (50%): Including programming assignments, homeworks, etc.
-* Final Project (40%): Including midterm project proposal, midterm report, final project presentation, and the final project report. Each group is restricted to a maximum of 3 members. Students are required to select a computer vision-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.
+* Assignments (40%): Including programming assignments, literature review reports, etc.
+* Midterm Report (20%): Students are required to select a computer vision-related paper from the past three years and write a research report. Additional points will be awarded if the report includes a demo and technical implementation.
+* Final Project (40%): Students must choose a computer vision-related topic and produce both a research report and a practical implementation project. The grading criteria include a clear understanding of the problem, the innovation and practicality of the solution, and the completeness and effectiveness of the technical implementation.
 * Class Participation (10%): -1 each absent.
 
 ## Office Hours
@@ -38,22 +39,22 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 2/20       | Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), [Lec1](https://drive.google.com/file/d/1QsX6b0WayO03aWGQnCaf4AHe9iqWKk2a/view?usp=drive_link) |          |            |
-| 2    | 2/27       | Image Formattion                  | [Lec2](https://drive.google.com/file/d/1UPNaHjPwct7LnUYOKokV7NMdUurxmY27/view?usp=drive_link)             | HW1: Image Sensing Pipeline  |            |
-| 3    | 3/5        | Image Features                    | Lec3             | HW2: Harris Corner Detection |            |
-| 4    | 3/12       | Camera Calibration                | Lec4             | HW3: Camera Calibration      | Group Form Due |
-| 5    | 3/19       | Stereo Vision                     | Lec5             | HW4: Homography Transformation |            |
-| 6    | 3/26       | Image Segmentation                | Lec6             | HW5: Otsu Thresholding and Gaussian Adaptive Thresholding |            |
-| 7    | 4/2        | Image Classification              | Lec7             | HW6: NN/CNN for ImageNet     |            |
-| 8    | 4/9        | Regularization and Optimization   | Lec8             |          |            |
-| 9    | 4/16       | Project Proposal at Midterm       |                  |          | Project Proposal Due |
-| 10   | 4/23       | Recurrent Neural Networks/LSTM    | Lec9             | HW7: RNN/LSTM for IMDB |            |
-| 11   | 4/30       | Attention and Transformers        | Lec10            | HW8: GCNet/SENET for ImageNet |            |
-| 12   | 5/7        | Generative AI                     | Lec11            | HW9: Diffusion Model |            |
-| 13   | 5/14       | VLM and LMM                       | Lec12            | HW10: LLM Application |            |
-| 14   | 5/21       | 3D Vision                         | Lec13            |          |            |
-| 15   | 5/28       | CV Application in Industry        | Lec14            |          |            |
-| 16   | 6/4        | Final Project Presentation        |                  |          | Final Report Due |
+| 1    | 2/18       | Course Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), [Lec1](https://drive.google.com/file/d/1QsX6b0WayO03aWGQnCaf4AHe9iqWKk2a/view?usp=drive_link) |          |            |
+| 2    | 2/25       | CV Introduction/Image Formattion | [Lec1][Lec2](https://drive.google.com/file/d/1UPNaHjPwct7LnUYOKokV7NMdUurxmY27/view?usp=drive_link)|          |          |
+| 3    | 3/4        | Intensity Tranformation | Lec3 | HW1: Image Sensing Pipeline |            |
+| 4    | 3/11       | Edge Detection | Lec4 |          | Group Form Due |
+| 5    | 3/18       | Corner Detection | Lec5 |          | HW1 Due |
+| 6    | 3/25       | Line Detection | Lec6 | HW2: Harris Corner Detection |          |
+| 7    | 4/1        | Special Lecture | Lec7 |          |          |
+| 8    | 4/8        | Project Proposal at Midterm | Lec8 |          | HW2 Due |
+| 9    | 4/15       | Cameraa Calibration |          |          | Project Proposal Due |
+| 10   | 4/22       | Image Segmentation | Lec9 | HW3: Camera Calibration |            |
+| 11   | 4/29       | Object Detection | Lec10 |          |            |
+| 12   | 5/6        | Deep Image Segmentation | Lec11 |          | HW3 Due |
+| 13   | 5/13       | Image Classification | Lec12 | HW4: Image Segmentation |            |
+| 14   | 5/20       | VLM/LLM | Lec13 |          |          |
+| 15   | 5/27       | 3D Vision/CV Application | Lec14 |          | HW4 Due |
+| 16   | 6/3        | Final Project Presentation |          |          | Final Report Due |
 
 ## Resource
 * [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision)
