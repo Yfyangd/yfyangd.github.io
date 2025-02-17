@@ -39,8 +39,8 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 2/18       | Course Introduction | [Lec0](https://drive.google.com/file/d/1tFv2mBld2LU4b8mea0s-yHf8Ep6-tXxk/view?usp=drive_link), [Lec1](https://drive.google.com/file/d/1QsX6b0WayO03aWGQnCaf4AHe9iqWKk2a/view?usp=drive_link) |          |            |
-| 2    | 2/25       | CV Introduction/Image Formattion | [Lec1][Lec2](https://drive.google.com/file/d/1UPNaHjPwct7LnUYOKokV7NMdUurxmY27/view?usp=drive_link)|          |          |
+| 1    | 2/18       | Course Introduction | [Lec0](https://drive.google.com/file/d/1cIZT0LbIQs7U8ti812FC7_9_eohKhbTl/view?usp=drive_link) |          |            |
+| 2    | 2/25       | CV Introduction/Image Formattion | Lec1, Lec2 |          |          |
 | 3    | 3/4        | Intensity Tranformation | Lec3 | HW1: Image Sensing Pipeline |            |
 | 4    | 3/11       | Edge Detection | Lec4 |          | Group Form Due |
 | 5    | 3/18       | Corner Detection | Lec5 |          | HW1 Due |
