@@ -39,9 +39,9 @@ This course aims to provide students with a deep understanding of the fundamenta
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 2/18       | Course Introduction | [Lec0](https://drive.google.com/file/d/1cIZT0LbIQs7U8ti812FC7_9_eohKhbTl/view?usp=drive_link), [Lec1](https://drive.google.com/file/d/1kvCEhdy_k-SRuyI9y8GwKT-f3YR5AcLQ/view?usp=drive_link) |          |            |
-| 2    | 2/25       | CV Introduction/Image Formattion | Lec2 |          |          |
-| 3    | 3/4        | Intensity Tranformation | Lec3 | HW1: Image Sensing Pipeline |            |
+| 1    | 2/18       | Course Introduction | [Lec0](https://drive.google.com/uc?export=view&id=1s4_PTH4wTaZ6IJd5FHNUbeWCKYSai2RB), [Lec1](https://drive.google.com/uc?export=view&id=1Cr5gqdcqc62P26D48pt3KTpQm5robGi2) |          |            |
+| 2    | 2/25       | CV Introduction/Image Formattion | [Lec2](https://drive.google.com/uc?export=view&id=1irSijxeFDStSOdRQbHK2jyWkeKWnwbbO) |          |          |
+| 3    | 3/4        | Intensity Tranformation | Lec3 | [HW1: Image Sensing Pipeline](https://github.com/Rossi-Laboratory/Course-Lectures/blob/main/Computer%20Vision/Assignment1/Image%20Sensing%20Pipeline.md) |            |
 | 4    | 3/11       | Edge Detection | Lec4 |          | Group Form Due |
 | 5    | 3/18       | Corner Detection | Lec5 |          | HW1 Due |
 | 6    | 3/25       | Line Detection | Lec6 | HW2: Harris Corner Detection |          |
