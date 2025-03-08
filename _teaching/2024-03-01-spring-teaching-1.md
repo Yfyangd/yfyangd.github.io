@@ -46,7 +46,7 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 5    | 3/18       | Corner Detection | Lec5 |          | HW1 Due |
 | 6    | 3/25       | Line Detection | Lec6 | HW2: Harris Corner Detection |          |
 | 7    | 4/1        | Special Lecture | Lec7 |          |          |
-| 8    | 4/8        | Project Proposal at Midterm | Lec8 |          | HW2 Due |
+| 8    | 4/8        | Midterm Report | Lec8 |          | HW2 Due |
 | 9    | 4/15       | Cameraa Calibration |          |          | Project Proposal Due |
 | 10   | 4/22       | Image Segmentation | Lec9 | HW3: Camera Calibration |            |
 | 11   | 4/29       | Object Detection | Lec10 |          |            |
