@@ -44,7 +44,7 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 3    | 3/4        | Intensity Tranformation | [Lec3](https://drive.google.com/uc?export=view&id=1-t36X9GqlvFeUtpJnG5-X14dqgo3Udab) | [HW1: Image Sensing Pipeline](https://github.com/Rossi-Laboratory/Course-Lectures/blob/main/Computer%20Vision/Assignment1/Image%20Sensing%20Pipeline.md) |            |
 | 4    | 3/11       | Edge Detection | [Lec4](https://drive.google.com/uc?export=view&id=1FEV0HP5DHu2gY58H0-AU2WHpE57LCdgk) |          | Group Form Due |
 | 5    | 3/18       | Corner Detection | [Lec5](https://drive.google.com/uc?export=view&id=16GKUUASBdXz51ESZI_vhyG8vAZ7UnB1g) |          | HW1 Due |
-| 6    | 3/25       | Line Detection | Lec6 | HW2: Harris Corner Detection |          |
+| 6    | 3/25       | Line Detection | [Lec6](https://drive.google.com/uc?export=view&id=1XdnxBQVSLEc3tH2QkayspxgtQYrlIcUZ) | HW2: Harris Corner Detection |          |
 | 7    | 4/1        | Special Lecture | Lec7 |          |          |
 | 8    | 4/8        | Midterm Report | Lec8 |          | HW2 Due |
 | 9    | 4/15       | Cameraa Calibration |          |          | Project Proposal Due |
