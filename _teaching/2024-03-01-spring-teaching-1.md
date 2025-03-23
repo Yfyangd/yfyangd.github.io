@@ -45,15 +45,15 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 4    | 3/11       | Edge Detection | [Lec4](https://drive.google.com/uc?export=view&id=1FEV0HP5DHu2gY58H0-AU2WHpE57LCdgk) |          | Group Form Due |
 | 5    | 3/18       | Corner Detection | [Lec5](https://drive.google.com/uc?export=view&id=16GKUUASBdXz51ESZI_vhyG8vAZ7UnB1g) |          | HW1 Due |
 | 6    | 3/25       | Line Detection | [Lec6](https://drive.google.com/uc?export=view&id=1XdnxBQVSLEc3tH2QkayspxgtQYrlIcUZ) | HW2: Harris Corner Detection |          |
-| 7    | 4/1        | Special Lecture | Lec7 |          |          |
-| 8    | 4/8        | Midterm Report | Lec8 |          | HW2 Due |
-| 9    | 4/15       | Cameraa Calibration |          |          | Project Proposal Due |
-| 10   | 4/22       | Image Segmentation | Lec9 | HW3: Camera Calibration |            |
-| 11   | 4/29       | Object Detection | Lec10 |          |            |
-| 12   | 5/6        | Deep Image Segmentation | Lec11 |          | HW3 Due |
-| 13   | 5/13       | Image Classification | Lec12 | HW4: Image Segmentation |            |
-| 14   | 5/20       | VLM/LLM | Lec13 |          |          |
-| 15   | 5/27       | 3D Vision/CV Application | Lec14 |          | HW4 Due |
+| 7    | 4/1        | Cameraa Calibration | [Lec7](https://drive.google.com/uc?export=view&id=1ZY8Ed7wc4v94sDFKKAxV6eECC-Nu3olF) |          |          |
+| 8    | 4/8        | Midterm Report |          |          | HW2 & Midterm Report Due |
+| 9    | 4/15       | Image Segmentation | Lec8 | HW3: Camera Calibration |            |
+| 10   | 4/22       | Special Lecture |          |          |            |
+| 11   | 4/29       | Object Detection | Lec9 |          | HW3 Due |
+| 12   | 5/6        | Deep Image Segmentation | Lec10 | HW4: Image Segmentation |            |
+| 13   | 5/13       | Image Classification | Lec11 |          |            |
+| 14   | 5/20       | VLM/LLM | Lec12 |          | HW4 Due |
+| 15   | 5/27       | 3D Vision | Lec13 |          |            |
 | 16   | 6/3        | Final Project Presentation |          |          | Final Report Due |
 
 ## Resource
