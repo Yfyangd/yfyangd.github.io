@@ -11,3 +11,6 @@ main:
 
   - title: "Teaching"
     url: /teaching/
+
+  - title: "Lab"
+    url: "https://rossilab.vercel.app/"  # 這裡放你的 Lab 網址
