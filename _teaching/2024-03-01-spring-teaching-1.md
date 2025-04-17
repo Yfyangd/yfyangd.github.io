@@ -47,7 +47,7 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 6    | 3/25       | Line Detection | [Lec6](https://drive.google.com/uc?export=view&id=1XdnxBQVSLEc3tH2QkayspxgtQYrlIcUZ) | [HW2: Harris Corner Detection](https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment2) |          |
 | 7    | 4/1        | Camera Calibration | [Lec7](https://drive.google.com/uc?export=view&id=1ZY8Ed7wc4v94sDFKKAxV6eECC-Nu3olF) |          |          |
 | 8    | 4/8        | Midterm Report |          |          | HW2 & Midterm Report Due |
-| 9    | 4/15       | Image Segmentation | Lec8 | HW3: Camera Calibration |            |
+| 9    | 4/15       | Image Segmentation | [Lec8](https://drive.google.com/file/d/1YFyVYZN4iXiU-17Eemh5tngAehFkYhZj/view?usp=sharing) | [HW3: Camera Calibration](https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment3) |            |
 | 10   | 4/22       | Special Lecture |          |          |            |
 | 11   | 4/29       | Object Detection | Lec9 |          | HW3 Due |
 | 12   | 5/6        | Deep Image Segmentation | Lec10 | HW4: Image Segmentation |            |
