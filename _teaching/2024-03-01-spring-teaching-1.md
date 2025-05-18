@@ -49,11 +49,11 @@ This course aims to provide students with a deep understanding of the fundamenta
 | 8    | 4/8        | Midterm Report |          |          | HW2 & Midterm Report Due |
 | 9    | 4/15       | Image Segmentation | [Lec8](https://drive.google.com/file/d/1YFyVYZN4iXiU-17Eemh5tngAehFkYhZj/view?usp=sharing) | [HW3: Camera Calibration](https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment3) |            |
 | 10   | 4/22       | Special Lecture |          |          |            |
-| 11   | 4/29       | Object Detection | Lec9 |          | HW3 Due |
-| 12   | 5/6        | Deep Image Segmentation | Lec10 | HW4: Image Segmentation |            |
-| 13   | 5/13       | Image Classification | Lec11 |          |            |
-| 14   | 5/20       | VLM/LLM | Lec12 |          | HW4 Due |
-| 15   | 5/27       | 3D Vision | Lec13 |          |            |
+| 11   | 4/29       | Object Detection | [Lec9](https://drive.google.com/uc?export=view&id=1mw4TkojqAY_5_Y3s1KjjT-4tmkSJl-tl) |          | HW3 Due |
+| 12   | 5/6        | Deep Image Segmentation | [Lec10](https://drive.google.com/uc?export=view&id=1o9YZaBdiBWiIbmYSJgq4wzkLYvCFrRZa) | HW4: Image Segmentation |            |
+| 13   | 5/13       | Image Classification | [Lec11](https://drive.google.com/uc?export=view&id=1M6-1ipjL8l-ViZBSmyoEr5nlEhzv2xTk) |          |            |
+| 14   | 5/20       | VLM/LLM | [Lec12](https://drive.google.com/uc?export=view&id=1oM5OzRD2VDXtOamyVeVxYXRrXrv1kq86) |          | HW4 Due |
+| 15   | 5/27       | 3D Vision | [Lec13](https://drive.google.com/uc?export=view&id=1na9-308WDmSbXSFx09TE6ME_eDNMburN) |          |            |
 | 16   | 6/3        | Final Project Presentation |          |          | Final Report Due |
 
 ## Resource
