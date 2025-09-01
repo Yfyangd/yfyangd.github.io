@@ -54,7 +54,7 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 | 12   | 11/18        | Training Neural Networks 1 | [Lec8]() | [HW3: Neural Networks]() |            |
 | 13   | 11/25       | Training Neural Networks 2 |            |          |            |
 | 14   | 12/2       | 3D Vision | [Lec9]() |          | HW3 Due |
-| 15   | 12/9       | Final Project Presentation | [Lec13]() |          |            |
+| 15   | 12/9       | Final Project Presentation |          |          |            |
 | 16   | 12/16        | Special Lecture |          |          | Final Report Due |
 
 
