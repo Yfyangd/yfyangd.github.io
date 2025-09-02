@@ -45,7 +45,7 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 | 4    | 9/23       | Autoencoder | [Lec3]() |            | Group Form Due |
 | 5    | 9/30       | Basic Principles and Concepts of GANs  | [Lec4]() | HW1 |            |
 | 6    | 10/7       | Applications and Developments of GANs | [Lec5]() |            |            |
-| 7    | 10/14        | Basic Principles and Concepts of DMs | [Lec6]() | [HW2 GA]() | HW1 Due |
+| 7    | 10/14        | Basic Principles and Concepts of DMs | [Lec6]() |            | HW1 Due |
 | 8    | 10/21        | Special Lecture |          |            |            |
 | 9    | 10/28       | Midterm Report |          |          | HW2 Due |
 | 10   | 11/4       | Applications and Developments of DMs |          |            | Midterm Report Due |
