@@ -9,9 +9,7 @@ location: "HsinChu, Taiwan"
 ---
 
 ## Course Overview and Objectives:
-This course provides students with a comprehensive introduction to the fundamentals of Generative Artificial Intelligence (GenAI), with a particular focus on image synthesis. It is designed to cultivate both theoretical understanding and practical implementation skills, while encouraging students to critically examine the applications of GenAI across diverse domains. By engaging with state-of-the-art models and techniques, students will explore the current limitations and challenges of GenAI, as well as emerging research trends and potential future directions in image generation.
-
-To strengthen the connection between theory and practice, the course features joint instruction with **Dr. Chia-Min Cheng**, Senior Expert from AI Technology Division of **MediaTek**, who will share cutting-edge industry insights. His lectures will bridge academic concepts with real-world product development, highlighting both technical challenges and commercial opportunities.
+This course, Artificial Intelligence (IIAI30017), offers students a comprehensive introduction to the fundamental concepts, techniques, and applications of artificial intelligence (AI). Through lectures, programming assignments, literature reviews, and project-based learning, students will gain both theoretical understanding and practical skills in AI. 
 
 * Provide a strong foundation in core AI principles, including search, knowledge representation, reasoning, probability, and machine learning.
 * Develop proficiency in Python programming for AI applications, reinforcing concepts through practical assignments.
