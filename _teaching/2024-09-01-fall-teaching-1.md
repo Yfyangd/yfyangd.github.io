@@ -39,20 +39,20 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
-| 1    | 9/2       | Class Introduction and Overview | [Lec0](https://drive.google.com/uc?export=view&id=1D0rdZOYLCSVgnfzXCNXQoTobzbv74FCY) |          |            |
-| 2    | 9/9       | Introduction of GenAI | [Lec1]() |            |            |
-| 3    | 9/16        | Overview of Vision Generative Models | [Lec2]() |            |            |
-| 4    | 9/23       | Autoencoder | [Lec3]() |            | Group Form Due |
-| 5    | 9/30       | Basic Principles and Concepts of GANs  | [Lec4]() | HW1 |            |
-| 6    | 10/7       | Applications and Developments of GANs | [Lec5]() |            |            |
-| 7    | 10/14        | Basic Principles and Concepts of DMs | [Lec6]() |            | HW1 Due |
-| 8    | 10/21        | Special Lecture |          |            |            |
-| 9    | 10/28       | Midterm Report |          |          | HW2 Due |
-| 10   | 11/4       | Applications and Developments of DMs |          |            | Midterm Report Due |
-| 11   | 11/11       | 3D Vision | [Lec7]() | HW2 |          |
-| 12   | 11/18        | GenAI Application in Industry - Mobile, Automotive, AR/VR  | [Lec8]() |            |            |
-| 13   | 11/25       | 3D Visual Effects | [Lec9]() |          |            |
-| 14   | 12/2       | Mixed Reality  | [Lec10]() |          |            |
-| 15   | 12/9       | VLM & LMM | [Lec11]() |          |            |
-| 16   | 12/16        | Final Project Presentation |          |          | Final Report Due |
+| 1    | 9/4       | Class Introduction and Overview | [Lec0](https://drive.google.com/uc?export=view&id=1D0rdZOYLCSVgnfzXCNXQoTobzbv74FCY) |          |            |
+| 2    | 9/11       | Introduction of GenAI | [Lec1]() |            |            |
+| 3    | 9/18        | Overview of Vision Generative Models | [Lec2]() |            |            |
+| 4    | 9/25       | Autoencoder | [Lec3]() |            | Group Form Due |
+| 5    | 10/2       | Basic Principles and Concepts of GANs  | [Lec4]() | HW1 |            |
+| 6    | 10/9       | Applications and Developments of GANs | [Lec5]() |            |            |
+| 7    | 10/16        | Basic Principles and Concepts of DMs | [Lec6]() |            | HW1 Due |
+| 8    | 10/23        | Special Lecture |          |            |            |
+| 9    | 10/30       | Midterm Report |          |          |          |
+| 10   | 11/6       | Applications and Developments of DMs |          |            | Midterm Report Due |
+| 11   | 11/13       | 3D Vision | [Lec7]() | HW2 |          |
+| 12   | 11/20        | GenAI Application in Industry - Mobile, Automotive, AR/VR  | [Lec8]() |            |            |
+| 13   | 11/27       | 3D Visual Effects | [Lec9]() |          | HW2 Due |
+| 14   | 12/4       | Mixed Reality  | [Lec10]() |          |            |
+| 15   | 12/11       | VLM & LMM | [Lec11]() |          |            |
+| 16   | 12/18        | Final Project Presentation |          |          | Final Report Due |
 
