@@ -9,7 +9,10 @@ location: "HsinChu, Taiwan"
 ---
 
 ## Course Overview and Objectives:
-This course, Artificial Intelligence (IIAI30017), offers students a comprehensive introduction to the fundamental concepts, techniques, and applications of artificial intelligence (AI). Through lectures, programming assignments, literature reviews, and project-based learning, students will gain both theoretical understanding and practical skills in AI. 
+This course provides students with a comprehensive introduction to the fundamentals of Generative Artificial Intelligence (GenAI), with a particular focus on image synthesis. It is designed to cultivate both theoretical understanding and practical implementation skills, while encouraging students to critically examine the applications of GenAI across diverse domains. By engaging with state-of-the-art models and techniques, students will explore the current limitations and challenges of GenAI, as well as emerging research trends and potential future directions in image generation.
+
+To strengthen the connection between theory and practice, the course features joint instruction with **Dr. Chia-Min Cheng**, Senior Expert from AI Technology Division of **MediaTek**, who will share cutting-edge industry insights. His lectures will bridge academic concepts with real-world product development, highlighting both technical challenges and commercial opportunities.
+
 * Provide a strong foundation in core AI principles, including search, knowledge representation, reasoning, probability, and machine learning.
 * Develop proficiency in Python programming for AI applications, reinforcing concepts through practical assignments.
 * Enhance students’ ability to critically read, evaluate, and present recent AI research papers.
@@ -26,8 +29,8 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 
 ## Grading
 * Assignments (30%): Including programming assignments, literature review reports, etc.
-* Midterm Report (20%): Students are required to select a computer vision-related paper from the past three years and write a research report. Additional points will be awarded if the report includes a demo and technical implementation.
-* Final Project (40%): Students must choose a computer vision-related topic and produce both a research report and a practical implementation project. The grading criteria include a clear understanding of the problem, the innovation and practicality of the solution, and the completeness and effectiveness of the technical implementation.
+* Midterm Report (20%): Students need to select a AI-related paper from the past three years and write a research report. The report should include Background, Motivation, Proposed Method, Result, and Personal Reflection. Additional points will be awarded for including a demo and technical implementation in the report.
+* Final Project (40%): Including project presentation, and final project report. Students are required to select a AI-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.
 * Class Participation (10%): Class Participation.
 * For each absence during roll call:-1 for the final grade.
 
