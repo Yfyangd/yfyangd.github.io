@@ -23,10 +23,10 @@ redirect_from:
 Education
 ======
 * Ph.D in College of Electrical Engineering and Computer Science, National Tsing Hua University
-* M.S. in Industrial and System Engineering, Chung Yuan Christian University
 
 Awards
 ======
+* 2025 MVA Small Multi-Object Tracking for Spotting Birds Challenge Winner (Undergraduate Project Team)
 * 2023 TSMC ESG Competition **Best Award**
 * 2023 CVPR (Vancouver) TechArt Piece Selected for Exhibition
 * 2022 TSMC Collaboration for Internal Control Excellence Symposium **First Award**
@@ -42,6 +42,10 @@ Work experience
 ======
 * 2024 -: Institute of Artificial Intelligence Innovation, NYCU
   * Assistant Professor
+* 2025 - 2026: Mirle Automation
+  * AI Consultant
+* 2024 - 2025: LCY GROUP
+  * AI Consultant
 * 2020 - 2023: Chief Engineering, Machine Learning Dept, TSMC
   * Create data-driven solutions to semiconductor operations problems (e.g. defect detection, fail
 rate analysis) across a variety of department using machine learning and statistics
@@ -57,6 +61,8 @@ for creating a backend model to estimate control wafer fail rate
 
 Activities
 ======
+* 2025 -: Machine Vision Application Conference
+  * Area Chair
 * 2017 - 2023: Quality & Reliability, TSMC
   * Member of CIT Competition Juror
 * 2022 - now: Reviewer
