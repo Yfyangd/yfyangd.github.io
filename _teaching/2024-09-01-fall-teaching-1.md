@@ -43,7 +43,7 @@ To strengthen the connection between theory and practice, the course features jo
 | Week | Date       | Progress, Content, Topics         | Slides           | Homework | Extra Info |
 |------|------------|-----------------------------------|------------------|----------|------------|
 | 1    | 9/4       | Class Introduction and Overview | [Lec0](https://drive.google.com/uc?export=view&id=1D0rdZOYLCSVgnfzXCNXQoTobzbv74FCY) |          |            |
-| 2    | 9/11       | Introduction of GenAI | [Lec1]() |            |            |
+| 2    | 9/11       | Introduction of GenAI | [Lec1](https://drive.google.com/uc?export=view&id=1oLJrPywX5gybf10yzUP8dFvI8IfbaiAm) |            |            |
 | 3    | 9/18        | Overview of Vision Generative Models | [Lec2]() |            |            |
 | 4    | 9/25       | Autoencoder | [Lec3]() |            | Group Form Due |
 | 5    | 10/2       | Basic Principles and Concepts of GANs  | [Lec4]() | HW1 |            |
