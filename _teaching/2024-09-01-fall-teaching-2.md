@@ -43,7 +43,7 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 |------|------------|-----------------------------------|------------------|----------|------------|
 | 1    | 9/2       | Class Introduction and Overview | [Lec0](https://drive.google.com/uc?export=view&id=1qrZLys9jPn36Dp4h-2PnYfDN9-tJ-mIT) |          |            |
 | 2    | 9/9       | Introduction of Artificial Intelligence / Python Tutorial | [Lec1](https://drive.google.com/uc?export=view&id=16MM_5dvqtFNAacdHl61EgTfMOnGaHXcY) |            |            |
-| 3    | 9/16        | Informed Search | [Lec2]() |            |            |
+| 3    | 9/16        | Informed Search | [Lec2](https://drive.google.com/uc?export=view&id=1FDuzoijjGEa6KqciIUbDkw5AS9eohHj-) |            |            |
 | 4    | 9/23       | Evolutionary Algorithms 1 | [Lec3]() |[HW1 Greedy Best-First Search]()| Group Form Due |
 | 5    | 9/30       | Evolutionary Algorithms 2 |            |            |            |
 | 6    | 10/7       | Local Search Methods | [Lec4]() |            | HW1 Due |
