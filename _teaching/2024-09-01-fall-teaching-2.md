@@ -44,7 +44,7 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 | 1    | 9/2       | Class Introduction and Overview | [Lec0](https://drive.google.com/uc?export=view&id=1qrZLys9jPn36Dp4h-2PnYfDN9-tJ-mIT) |          |            |
 | 2    | 9/9       | Introduction of Artificial Intelligence / Python Tutorial | [Lec1](https://drive.google.com/uc?export=view&id=16MM_5dvqtFNAacdHl61EgTfMOnGaHXcY) |            |            |
 | 3    | 9/16        | Informed Search | [Lec2](https://drive.google.com/uc?export=view&id=1FDuzoijjGEa6KqciIUbDkw5AS9eohHj-) |            |            |
-| 4    | 9/23       | Evolutionary Algorithms 1 | [Lec3](https://drive.google.com/uc?export=view&id=1r77UzR_s-xnirH3VtclmClBIfk0bDnZs) |[HW1 Greedy Best-First Search](https://drive.google.com/uc?export=view&id=1wFQlR7b3b9Qq7zXM5qs91VjdTUoSZmyp)| Group Form Due |
+| 4    | 9/23       | Evolutionary Algorithms 1 | [Lec3](https://drive.google.com/uc?export=view&id=1r77UzR_s-xnirH3VtclmClBIfk0bDnZs) |[HW1 Greedy Best-First Search](https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/AI/Assignment1)| Group Form Due |
 | 5    | 9/30       | Evolutionary Algorithms 2 |            |            |            |
 | 6    | 10/7       | Local Search Methods | [Lec4]() |            | HW1 Due |
 | 7    | 10/14        | Swarm Intelligence 1 | [Lec5]() | [HW2 GA]() |            |
