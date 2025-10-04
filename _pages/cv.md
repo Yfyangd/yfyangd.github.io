@@ -26,7 +26,7 @@ Education
 
 Awards
 ======
-* 2025 MVA Small Multi-Object Tracking for Spotting Birds Challenge Winner (Undergraduate Project Team)
+* 2025 MVA Small Multi-Object Tracking for Spotting Birds Challenge **Winner**
 * 2023 TSMC ESG Competition **Best Award**
 * 2023 CVPR (Vancouver) TechArt Piece Selected for Exhibition
 * 2022 TSMC Collaboration for Internal Control Excellence Symposium **First Award**
