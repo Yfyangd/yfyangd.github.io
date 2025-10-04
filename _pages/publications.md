@@ -20,7 +20,7 @@ redirect_from:
  defer>
 </script>
 
-
+Please also refer to my [Google Scholar Profile](https://scholar.google.com/citations?hl=zh-TW&user=Xzx8xqUAAAAJ)
 ======
 
 * [Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer](https://iccv.thecvf.com/virtual/2025/poster/1409) - ICCV, Honolulu, 2025.
