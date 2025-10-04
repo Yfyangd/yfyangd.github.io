@@ -1,9 +1,24 @@
 ---
-layout: single
+layout: archive
 title: "Publications"
-permalink: /pubs/
+permalink: /cv/
 author_profile: true
+redirect_from:
+  - /resume
 ---
+
+{% include base_path %}
+
+<script>
+ window.difyChatbotConfig = { 
+  token: 'FLDVs1lMPmClxxJW'
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="FLDVs1lMPmClxxJW"
+ defer>
+</script>
 
 ## Publications
 
