@@ -19,7 +19,7 @@ redirect_from:
  defer>
 </script>
 
-My research primarily focuses on Artificial Intelligence and Computer Vision, with a strong emphasis on enhancing human creativity and intelligent manufacturing. I explore various domains, including Generative Models, 3D Representations, Quantum Deep Learning, and Large Multimodal Models, to advance AI’s role in augmenting human ingenuity and industrial innovation.  
+My research primarily focuses on Computer Vision and Robotic AI, with a strong emphasis on enhancing intelligent manufacturing and automations. I explore various domains, including Generative Models, 3D/4D Representation, and Large Multimodal Models, to advance AI’s role in augmenting human ingenuity and industrial innovation.  
 
 Before transitioning to academia, I served as a Data Scientist and Team Lead at Taiwan Semiconductor Manufacturing Company (TSMC), where I worked closely with Foundry Engineers to tackle complex data analytics challenges. My research spanned multiple domains, including defect inspection and yield prediction, leveraging state-of-the-art deep learning techniques to enhance semiconductor manufacturing processes.  
 
