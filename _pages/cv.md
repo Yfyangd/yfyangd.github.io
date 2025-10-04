@@ -24,6 +24,27 @@ Education
 ======
 * Ph.D in College of Electrical Engineering and Computer Science, National Tsing Hua University
 
+Experience
+======
+* 2024 - present: Institute of Artificial Intelligence Innovation, NYCU
+  * Assistant Professor
+* 2025 - 2027: Frontier Robotic AI Project, NSTC
+  * PI
+* 2025 - present: NYCU-MIRLE Joint Lab
+  * PI
+* 2025 - present: Mirle Automation
+  * AI Consultant
+* 2024 - 2025: LCY GROUP
+  * AI Consultant
+* 2025 - 2029: Frontier AI Project, NSTC
+  * Co-PI
+* 2024 - present: Application and Development of AI in Humanity and Social Science Center, NTHU
+  * Co-PI
+* 2024 - present: MetAIoT Lab, NTHU
+  * Co-PI
+* 2006 - 2023: IT, TSMC
+  * Project Manager/Chief Engineer/Supervisor
+
 Awards
 ======
 * 2025 MVA Small Multi-Object Tracking for Spotting Birds Challenge **Winner**
@@ -38,35 +59,11 @@ Awards
 * 2011, 2015, 2016 TSMC CIT Competition **Frist Award**
 * 2011, 2016 TSMC **Annual First Award**
 
-Work experience
-======
-* 2024 -: Institute of Artificial Intelligence Innovation, NYCU
-  * Assistant Professor
-* 2025 - 2026: Mirle Automation
-  * AI Consultant
-* 2024 - 2025: LCY GROUP
-  * AI Consultant
-* 2020 - 2023: Chief Engineering, Machine Learning Dept, TSMC
-  * Create data-driven solutions to semiconductor operations problems (e.g. defect detection, fail
-rate analysis) across a variety of department using machine learning and statistics
-  * Used EDA, statistical tools, machine learning modeling algorithms and model performance tools
-for creating a backend model to estimate control wafer fail rate
-  * Develop AIOps for IT Operations, focuses on analyzing and prioritizing millions of events on K8S
-  * Developed and deployed deep learning models for object detection
-* 2015 - 2019: Supervisor, MEP Dept, TSMC
-  * Design a dashboard, a frontend UI development, as a visualization tool for the user
-  * Responsible for the planning and re-designing the internal work flow of the semiconductor manufacturing line. Achieved a productivity improvement of 40% with a auto workflow built in Web UI
-  * Wrote simulations to study the sensitivity of equipment productivity
-  * Use a variety of Big Data tools to analyse semiconductor process history and solve the system problem in foundry.
-
 Activities
 ======
-* 2025 -: Machine Vision Application Conference
+* 2025 -: Machine Vision Application Conference (MVA)
   * Area Chair
 * 2017 - 2023: Quality & Reliability, TSMC
-  * Member of CIT Competition Juror
-* 2022 - now: Reviewer
-  * Computer Vision and Pattern Recognition Conference (CVPR)
-  * International Conference on Computer Vision (ICCV)
-  * IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+  * Mentorship & CIT/ML Competition Juror
+
   * IEEE Transactions on Instrumentation and Measurement (TIM)
