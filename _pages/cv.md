@@ -26,26 +26,17 @@ Education
 
 Experience
 ======
-* 2024 - present: Institute of Artificial Intelligence Innovation, NYCU
-  * Assistant Professor
-* 2025 - 2027: Frontier Robotic AI Project, NSTC
-  * PI
-* 2025 - present: NYCU-MIRLE Joint Lab
-  * PI
-* 2025 - present: MIRLE Automation
-  * Chief Consultant
-* 2024 - 2025: LCY GROUP
-  * AI Consultant
-* 2025 - 2026: Industry–Academia Cooperative Research Project, MIRLE Automation
-  * Co-PI
-* 2025 - 2029: Frontier AI Project, NSTC
-  * Co-PI
-* 2024 - present: Application and Development of AI in Humanity and Social Science Center, NTHU
-  * Co-PI
-* 2024 - present: MetAIoT Lab, NTHU
-  * Co-PI
-* 2006 - 2023: IT, TSMC
-  * Project Manager/Chief Engineer/Supervisor
+* Assistant Professor, Institute of Artificial Intelligence Innovation, NYCU (2024 - present)
+* PI, Frontier Robotic AI Project, NSTC (2025 - 2027)
+* PI, NYCU-MIRLE Joint Lab (2025 - present)
+* Chief Consultant, MIRLE Automation (2025 - present)
+* AI Consultant, LCY GROUP (2024 - 2025)
+* Co-PI, Industry–Academia Cooperative Research Project, MIRLE Automation (2025 - 2026)
+* Co-PI, Frontier AI Project, NSTC (2025 - 2029)
+* Co-PI, Industry–Academia Alliance for Intelligent Sensor Systems, NSTC (2025 - 2029)
+* Co-PI, Application and Development of AI in Humanity and Social Science Center, NTHU (2024 - present)
+* Co-PI, MetAIoT Lab, NTHU (2024 - present)
+* Project Manager/Chief Engineer/Supervisor, IT, TSMC (2006 - 2023)
 
 Awards
 ======
