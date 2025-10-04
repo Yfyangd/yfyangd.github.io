@@ -58,5 +58,3 @@ Activities
   * Area Chair
 * 2017 - 2023: Quality & Reliability, TSMC
   * Mentorship & CIT/ML Competition Juror
-
-  * IEEE Transactions on Instrumentation and Measurement (TIM)
