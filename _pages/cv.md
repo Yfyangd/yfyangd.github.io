@@ -32,10 +32,12 @@ Experience
   * PI
 * 2025 - present: NYCU-MIRLE Joint Lab
   * PI
-* 2025 - present: Mirle Automation
-  * AI Consultant
+* 2025 - present: MIRLE Automation
+  * Chief Consultant
 * 2024 - 2025: LCY GROUP
   * AI Consultant
+* 2025 - 2026: Industry–Academia Cooperative Research Project, MIRLE Automation
+  * Co-PI
 * 2025 - 2029: Frontier AI Project, NSTC
   * Co-PI
 * 2024 - present: Application and Development of AI in Humanity and Social Science Center, NTHU
