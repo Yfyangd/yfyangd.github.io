@@ -46,13 +46,13 @@ This course, Artificial Intelligence (IIAI30017), offers students a comprehensiv
 | 3    | 9/16        | Informed Search | [Lec2](https://drive.google.com/uc?export=view&id=1FDuzoijjGEa6KqciIUbDkw5AS9eohHj-) |            |            |
 | 4    | 9/23       | Evolutionary Algorithms 1 | [Lec3](https://drive.google.com/uc?export=view&id=1r77UzR_s-xnirH3VtclmClBIfk0bDnZs) |[HW1 Greedy Best-First Search](https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/AI/Assignment1)| Group Form Due |
 | 5    | 9/30       | Evolutionary Algorithms 2 |            |            |            |
-| 6    | 10/7       | Local Search Methods | [Lec4]() |            | HW1 Due |
-| 7    | 10/14        | Swarm Intelligence 1 | [Lec5]() | [HW2 GA]() |            |
+| 6    | 10/7       | Local Search Methods | [Lec4](https://drive.google.com/uc?export=view&id=1KG0FeSMB0W2_0uRiNf4oDTSAMs53JQ35) |            | HW1 Due |
+| 7    | 10/14        | Swarm Intelligence 1 | [Lec5](https://drive.google.com/uc?export=view&id=1GD0cykErTYbXVX99b2QtfnX99q4z6Y74) | [HW2 GA]() |            |
 | 8    | 10/21        | Swarm Intelligence 2 |          |            |            |
 | 9    | 10/28       | Midterm Report |          |          | HW2 Due |
-| 10   | 11/4       | Neural Networks | [Lec6]() |            | Midterm Report Due |
-| 11   | 11/11       | Convolutional Architecture | [Lec7]() |          |          |
-| 12   | 11/18        | Training Neural Networks 1 | [Lec8]() | [HW3: Neural Networks]() |            |
+| 10   | 11/4       | Neural Networks | [Lec6](https://drive.google.com/uc?export=view&id=1WHk5n_7I4VdVIx9vn6r11WOFBIOx5fwN) |            | Midterm Report Due |
+| 11   | 11/11       | Convolutional Architecture | [Lec7](https://drive.google.com/uc?export=view&id=14Ns7jmV0XGfxWECJxSU9AW8_bBssQObP) |          |          |
+| 12   | 11/18        | Training Neural Networks 1 | [Lec8](https://drive.google.com/uc?export=view&id=1i2qhZEDAgIveQwCgQXEG2lCUvlsNHt0L) | [HW3: Neural Networks]() |            |
 | 13   | 11/25       | Training Neural Networks 2 |            |          |            |
 | 14   | 12/2       | 3D Vision | [Lec9]() |          | HW3 Due |
 | 15   | 12/9       | Final Project Presentation |          |          |            |
