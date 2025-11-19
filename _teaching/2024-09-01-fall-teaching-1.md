@@ -46,13 +46,13 @@ To strengthen the connection between theory and practice, the course features jo
 | 2    | 9/11       | Introduction of GenAI | [Lec1](https://drive.google.com/uc?export=view&id=1oLJrPywX5gybf10yzUP8dFvI8IfbaiAm) |            |            |
 | 3    | 9/18        | Overview of Vision Generative Models | [Lec2](https://drive.google.com/uc?export=view&id=1wUBgrU-jRDxfrDt0YOu_mUsDWupdQfHx) |            |            |
 | 4    | 9/25       | Autoencoder | [Lec3](https://drive.google.com/uc?export=view&id=1eKK8npyWViZE29TK1lRZsR-PmBzI4e-N) |            | Group Form Due |
-| 5    | 10/2       | Basic Principles and Concepts of GANs  | [Lec4](https://drive.google.com/uc?export=view&id=1J0IH8FMbUIQiyH4rOFA6euu8mau66bwy) | HW1 |            |
+| 5    | 10/2       | Basic Principles and Concepts of GANs  | [Lec4](https://drive.google.com/uc?export=view&id=1J0IH8FMbUIQiyH4rOFA6euu8mau66bwy) | [HW1](https://drive.google.com/uc?export=view&id=1Q00TaTu634lB644qh5s5_7LIt_VuSUJh) |            |
 | 6    | 10/9       | Applications and Developments of GANs | [Lec5](https://drive.google.com/uc?export=view&id=1wjwNp1Fkb6VXDzyQjTCbd4L0wgoBUm8t) |            |            |
 | 7    | 10/16        | Basic Principles and Concepts of DMs | [Lec6](https://drive.google.com/uc?export=view&id=1G9_YMPqGntzIp87izNEAUJaC1qTlwAtP) |            | HW1 Due |
 | 8    | 10/23        | Special Lecture |          |            |            |
 | 9    | 10/30       | Midterm Report |          |          |          |
 | 10   | 11/6       | Applications and Developments of DMs |          |            | Midterm Report Due |
-| 11   | 11/13       | 3D Vision | [Lec7](https://drive.google.com/uc?export=view&id=1hQgTpjGsbUfjydoqMcElBlYpNCJKSBue) | HW2 |          |
+| 11   | 11/13       | 3D Vision | [Lec7](https://drive.google.com/uc?export=view&id=1hQgTpjGsbUfjydoqMcElBlYpNCJKSBue) | [HW2](https://drive.google.com/uc?export=view&id=1QrLmWyIol57eX51brsJ69ZV-pKUpjVOc) |          |
 | 12   | 11/20        | GenAI Application in Industry - Mobile, Automotive, AR/VR  | [Lec8]() |            |            |
 | 13   | 11/27       | 3D Visual Effects | [Lec9]() |          | HW2 Due |
 | 14   | 12/4       | Mixed Reality  | [Lec10]() |          |            |
