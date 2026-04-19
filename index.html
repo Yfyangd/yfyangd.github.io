@@ -1,0 +1,1644 @@
+<!--
+  ==========================================================================
+  YuanFu Yang — Academic Site
+  Built with UI/UX Pro Max v2.5.0 reasoning engine
+  ==========================================================================
+  Matched rule : #67 Magazine/Blog → Storytelling + Hero-Centric
+  Style DNA    : Swiss Modernism 2.0 (#50) + Editorial Grid (#66)
+  Typography   : #14 News Editorial — Newsreader + Inter
+  Palette      : #11 Portfolio/Personal (mono) + #A51C30 Harvard accent
+  Target       : WCAG AAA contrast, reduced-motion friendly
+  ==========================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YuanFu Yang | Assistant Professor, NYCU</title>
+  <meta name="description" content="YuanFu Yang — Assistant Professor at NYCU Institute of Artificial Intelligence Innovation. Research in Computer Vision, Generative AI, and Robotic AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ============================================================
+       DESIGN TOKENS — Swiss Modernism 2.0 + Portfolio/Personal palette
+       ============================================================ */
+    :root{
+      /* palette (skill #11 Portfolio/Personal + Harvard accent) */
+      --fg:           #09090B;
+      --primary:      #18181B;
+      --secondary:    #3F3F46;
+      --muted:        #64748B;
+      --muted-bg:     #F4F4F5;
+      --border:       #E4E4E7;
+      --border-dk:    #D4D4D8;
+      --bg:           #FFFFFF;
+      --bg-2:         #FAFAFA;
+      --accent:       #A51C30;   /* Harvard crimson */
+      --accent-dk:    #7A1422;
+      --accent-lt:    #FDF2F4;
+
+      /* 8px base spacing scale (Swiss Modernism) */
+      --s-1: 4px; --s-2: 8px; --s-3: 16px; --s-4: 24px;
+      --s-5: 32px; --s-6: 48px; --s-7: 64px; --s-8: 96px; --s-9: 128px;
+
+      /* mathematical type scale */
+      --t-xs: .75rem;  --t-sm: .875rem; --t-base: 1rem;
+      --t-md: 1.125rem; --t-lg: 1.25rem; --t-xl: 1.5rem;
+      --t-2xl: 2rem;   --t-3xl: 2.5rem; --t-4xl: 3.5rem;
+
+      /* grid */
+      --grid-max: 1120px;
+      --prose-max: 68ch;
+      --content-max: 960px;
+    }
+
+    /* ============================================================
+       BASE
+       ============================================================ */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{
+      background:var(--bg);
+      color:var(--fg);
+      font-family:'Newsreader', 'Source Serif 4', Georgia, serif;
+      font-size:1.0625rem;       /* 17px base — optimal reading */
+      font-weight:400;
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      font-feature-settings:"kern","liga","onum";
+    }
+
+    /* respect motion prefs (UX guideline #9, #99) */
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+        scroll-behavior:auto !important;
+      }
+    }
+
+    ::-webkit-scrollbar{width:10px}
+    ::-webkit-scrollbar-track{background:var(--bg-2)}
+    ::-webkit-scrollbar-thumb{background:var(--border-dk);border-radius:5px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+    /* ============================================================
+       LINKS
+       ============================================================ */
+    a{
+      color:var(--accent);
+      text-decoration:none;
+      text-underline-offset:3px;
+      text-decoration-thickness:1px;
+      transition:color .15s ease;
+    }
+    a:hover{color:var(--accent-dk);text-decoration:underline}
+    a:focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:3px;
+      border-radius:2px;
+    }
+
+    /* skip link (UX #45) */
+    .skip{
+      position:absolute;left:-999px;top:0;z-index:9999;
+      background:var(--accent);color:#fff;
+      padding:.6rem 1rem;font-family:'Inter',sans-serif;
+      font-size:var(--t-sm);font-weight:600;
+    }
+    .skip:focus{left:1rem;top:1rem;color:#fff;text-decoration:none}
+
+    /* ============================================================
+       TYPOGRAPHY
+       ============================================================ */
+    h1,h2,h3,h4{
+      font-family:'Newsreader',serif;
+      font-weight:600;
+      color:var(--primary);
+      letter-spacing:-.01em;
+      line-height:1.15;
+    }
+
+    .ui-text,
+    nav, .tag, .btn, .meta-label, .badge,
+    .eyebrow, .portrait-caption, .pub-year, .tl-period, .glance-row,
+    .cl-label, .footer-inner{
+      font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-feature-settings:"cv02","cv03","cv04","cv11";
+    }
+
+    /* ============================================================
+       NAVIGATION
+       ============================================================ */
+    nav.primary{
+      position:sticky;top:0;z-index:100;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav-inner{
+      max-width:var(--grid-max);
+      margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:var(--s-3) var(--s-5);
+    }
+    .nav-logo{
+      font-family:'Newsreader',serif;
+      font-weight:600;font-size:var(--t-md);
+      color:var(--primary);letter-spacing:-.01em;
+    }
+    .nav-logo em{font-style:italic;color:var(--accent)}
+    .nav-links{
+      display:flex;gap:var(--s-4);
+      list-style:none;align-items:center;
+    }
+    .nav-links a{
+      font-family:'Inter',sans-serif;
+      font-size:.82rem;
+      font-weight:500;
+      color:var(--secondary);
+      letter-spacing:.01em;
+      padding:var(--s-2) 0;
+      border-bottom:1px solid transparent;
+      transition:color .15s, border-color .15s;
+    }
+    .nav-links a:hover,
+    .nav-links a[aria-current="true"]{
+      color:var(--accent);
+      border-bottom-color:var(--accent);
+      text-decoration:none;
+    }
+    .nav-links .lab-link{
+      color:var(--accent);
+      font-weight:600;
+    }
+    .nav-hamburger{
+      display:none;flex-direction:column;gap:5px;
+      cursor:pointer;background:transparent;border:none;
+      padding:var(--s-1);
+    }
+    .nav-hamburger span{
+      width:22px;height:2px;
+      background:var(--primary);
+      transition:.25s;
+    }
+
+    /* ============================================================
+       LAYOUT CONTAINERS
+       ============================================================ */
+    main{
+      max-width:var(--grid-max);
+      margin:0 auto;
+      padding:0 var(--s-5);
+    }
+
+    section{
+      padding:var(--s-8) 0 var(--s-7);
+      border-top:1px solid var(--border);
+    }
+
+    .section-head{margin-bottom:var(--s-6)}
+    .eyebrow{
+      font-size:.72rem;
+      color:var(--accent);
+      letter-spacing:.2em;
+      text-transform:uppercase;
+      font-weight:600;
+      margin-bottom:var(--s-2);
+    }
+    .eyebrow::before{
+      content:'§ ';
+      opacity:.6;
+    }
+    h2.section-title{
+      font-size:clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight:600;
+      letter-spacing:-.015em;
+      color:var(--primary);
+    }
+    .section-sub{
+      font-size:var(--t-md);
+      color:var(--secondary);
+      max-width:var(--prose-max);
+      margin-top:var(--s-2);
+      line-height:1.55;
+      font-style:italic;
+    }
+
+    /* ============================================================
+       HERO — editorial asymmetric grid
+       ============================================================ */
+    .hero{
+      max-width:var(--grid-max);
+      margin:0 auto;
+      padding:var(--s-8) var(--s-5) var(--s-7);
+      border-top:none !important;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 280px;
+      gap:var(--s-7);
+      align-items:start;
+    }
+    .hero-eyebrow{
+      font-family:'Inter',sans-serif;
+      font-size:var(--t-xs);
+      color:var(--accent);
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      font-weight:600;
+      margin-bottom:var(--s-3);
+      display:flex;align-items:center;gap:var(--s-2);
+    }
+    .hero-eyebrow::before{
+      content:'';width:28px;height:1px;
+      background:var(--accent);
+    }
+    h1.hero-name{
+      font-family:'Newsreader',serif;
+      font-size:clamp(2.5rem, 6vw, 4.25rem);
+      font-weight:500;
+      line-height:1.05;
+      letter-spacing:-.025em;
+      color:var(--primary);
+      margin-bottom:var(--s-2);
+    }
+    .hero-title{
+      font-family:'Newsreader',serif;
+      font-style:italic;
+      font-size:clamp(1.125rem, 2vw, 1.4rem);
+      color:var(--accent);
+      font-weight:400;
+      margin-bottom:var(--s-1);
+    }
+    .hero-affil{
+      font-family:'Inter',sans-serif;
+      font-size:var(--t-sm);
+      color:var(--muted);
+      margin-bottom:var(--s-5);
+      line-height:1.5;
+    }
+    .hero-desc{
+      font-size:var(--t-md);
+      line-height:1.65;
+      color:var(--secondary);
+      margin-bottom:var(--s-5);
+      max-width:var(--prose-max);
+    }
+    .hero-desc strong{color:var(--primary);font-weight:600}
+
+    .hero-cta{
+      display:flex;gap:var(--s-2);
+      flex-wrap:wrap;
+      margin-bottom:var(--s-5);
+    }
+    .btn{
+      display:inline-flex;align-items:center;gap:var(--s-2);
+      padding:.6rem 1.1rem;
+      font-family:'Inter',sans-serif;
+      font-size:var(--t-sm);
+      font-weight:500;
+      letter-spacing:.01em;
+      text-decoration:none;
+      border-radius:2px;
+      transition:all .18s ease;
+      cursor:pointer;
+      line-height:1;
+    }
+    .btn-primary{
+      background:var(--primary);
+      color:#fff;
+      border:1px solid var(--primary);
+    }
+    .btn-primary:hover{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#fff;
+      text-decoration:none;
+    }
+    .btn-outline{
+      background:transparent;
+      color:var(--primary);
+      border:1px solid var(--border-dk);
+    }
+    .btn-outline:hover{
+      border-color:var(--accent);
+      color:var(--accent);
+      background:var(--accent-lt);
+      text-decoration:none;
+    }
+
+    .hero-social{display:flex;gap:var(--s-2);align-items:center}
+    .hero-social a{
+      width:36px;height:36px;
+      display:inline-flex;align-items:center;justify-content:center;
+      border:1px solid var(--border);
+      border-radius:50%;
+      color:var(--muted);
+      font-size:.9rem;
+      transition:all .2s;
+    }
+    .hero-social a:hover{
+      color:var(--accent);
+      border-color:var(--accent);
+      text-decoration:none;
+    }
+
+    /* Hero portrait — Swiss off-grid alignment */
+    .hero-portrait{position:relative}
+    .hero-portrait img{
+      width:100%;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      display:block;
+      background:var(--muted-bg);
+      filter:grayscale(.08) contrast(1.02);
+    }
+    .hero-portrait::before{
+      content:'';
+      position:absolute;inset:-12px auto auto -12px;
+      width:48%;height:48%;
+      border-top:2px solid var(--accent);
+      border-left:2px solid var(--accent);
+      z-index:-1;
+    }
+    .hero-portrait::after{
+      content:'';
+      position:absolute;inset:auto -12px -12px auto;
+      width:48%;height:48%;
+      border-bottom:2px solid var(--border-dk);
+      border-right:2px solid var(--border-dk);
+      z-index:-1;
+    }
+    .portrait-caption{
+      font-family:'Inter',sans-serif;
+      font-size:.68rem;
+      color:var(--muted);
+      text-align:center;
+      margin-top:var(--s-3);
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    /* ============================================================
+       ABOUT — Editorial Grid with drop cap
+       ============================================================ */
+    .about-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 2fr) minmax(0, 1fr);
+      gap:var(--s-6);
+      align-items:start;
+    }
+    .about-text p{
+      font-size:var(--t-md);
+      line-height:1.7;
+      color:var(--fg);
+      margin-bottom:var(--s-3);
+      max-width:var(--prose-max);
+    }
+    /* editorial drop cap (from Editorial Grid style #66) */
+    .about-text p.lead::first-letter{
+      font-family:'Newsreader',serif;
+      font-size:3.6em;
+      line-height:.85;
+      font-weight:600;
+      float:left;
+      margin:.05em .08em 0 0;
+      color:var(--accent);
+    }
+    .about-text p strong{color:var(--primary);font-weight:600}
+    .about-text p strong.highlight{
+      background:linear-gradient(to top, var(--accent-lt) 40%, transparent 40%);
+      padding:0 .08em;
+    }
+
+    .about-meta{
+      margin-top:var(--s-5);
+      padding-top:var(--s-4);
+      border-top:1px solid var(--border);
+      display:grid;gap:var(--s-2);
+    }
+    .meta-item{
+      display:grid;
+      grid-template-columns:100px 1fr;
+      gap:var(--s-3);
+      font-family:'Inter',sans-serif;
+      font-size:var(--t-sm);
+      color:var(--secondary);
+    }
+    .meta-label{
+      color:var(--muted);
+      font-size:.72rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      padding-top:.15rem;
+      font-weight:500;
+    }
+
+    /* research interests sidebar */
+    .about-side{
+      background:var(--bg-2);
+      border:1px solid var(--border);
+      border-left:3px solid var(--accent);
+      padding:var(--s-5);
+      position:sticky;
+      top:100px;
+    }
+    .about-side h3{
+      font-family:'Newsreader',serif;
+      font-size:var(--t-lg);
+      font-weight:600;
+      color:var(--primary);
+      margin-bottom:var(--s-4);
+      padding-bottom:var(--s-2);
+      border-bottom:1px solid var(--border);
+    }
+    .interest-group{margin-bottom:var(--s-3)}
+    .interest-group:last-child{margin-bottom:0}
+    .interest-label{
+      font-family:'Inter',sans-serif;
+      font-size:.7rem;
+      font-weight:600;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--accent);
+      margin-bottom:.3rem;
+    }
+    .interest-items{
+      font-family:'Newsreader',serif;
+      font-size:1rem;
+      color:var(--secondary);
+      line-height:1.55;
+    }
+
+    /* ============================================================
+       RESEARCH — editorial 3-column cards
+       ============================================================ */
+    .research-grid{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:var(--s-4);
+    }
+    .research-card{
+      background:var(--bg);
+      border:1px solid var(--border);
+      padding:var(--s-5);
+      transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+      display:flex;flex-direction:column;
+      position:relative;
+    }
+    .research-card::before{
+      content:'';
+      position:absolute;top:0;left:0;
+      width:48px;height:2px;
+      background:var(--accent);
+    }
+    .research-card:hover{
+      border-color:var(--border-dk);
+      transform:translateY(-2px);
+      box-shadow:0 8px 28px -14px rgba(0,0,0,.18);
+    }
+    .rc-num{
+      font-family:'Inter',sans-serif;
+      font-size:.7rem;
+      color:var(--muted);
+      letter-spacing:.15em;
+      margin-bottom:var(--s-2);
+      font-weight:500;
+    }
+    .rc-icon{
+      font-size:1.4rem;
+      color:var(--accent);
+      margin-bottom:var(--s-3);
+    }
+    .rc-title{
+      font-family:'Newsreader',serif;
+      font-size:1.35rem;
+      font-weight:600;
+      color:var(--primary);
+      margin-bottom:var(--s-2);
+      line-height:1.2;
+    }
+    .rc-desc{
+      font-size:1rem;
+      color:var(--secondary);
+      line-height:1.6;
+      margin-bottom:var(--s-3);
+      flex:1;
+    }
+    .rc-topics{
+      display:flex;flex-wrap:wrap;gap:var(--s-1);
+      padding-top:var(--s-3);
+      border-top:1px dotted var(--border);
+    }
+    .rc-topic{
+      font-family:'Inter',sans-serif;
+      font-size:.7rem;
+      padding:.2rem .55rem;
+      color:var(--muted);
+      border:1px solid var(--border);
+      border-radius:2px;
+      letter-spacing:.02em;
+    }
+
+    /* ============================================================
+       EXPERIENCE — minimalist timeline
+       ============================================================ */
+    .timeline{
+      position:relative;
+      padding-left:var(--s-5);
+      max-width:880px;
+    }
+    .timeline::before{
+      content:'';
+      position:absolute;
+      left:5px;top:6px;bottom:6px;
+      width:1px;
+      background:var(--border);
+    }
+    .tl-item{
+      position:relative;
+      padding-bottom:var(--s-5);
+    }
+    .tl-item:last-child{padding-bottom:0}
+    .tl-dot{
+      position:absolute;
+      left:calc(-1 * var(--s-5) + 1px);
+      top:.4rem;
+      width:11px;height:11px;
+      border-radius:50%;
+      background:var(--bg);
+      border:2px solid var(--accent);
+    }
+    .tl-item.current .tl-dot{background:var(--accent)}
+    .tl-header{
+      display:flex;align-items:baseline;gap:var(--s-2);
+      flex-wrap:wrap;margin-bottom:var(--s-1);
+    }
+    .tl-role{
+      font-family:'Newsreader',serif;
+      font-size:1.25rem;
+      font-weight:600;
+      color:var(--primary);
+    }
+    .badge{
+      font-family:'Inter',sans-serif;
+      font-size:.62rem;
+      padding:.15rem .5rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:600;
+      border-radius:2px;
+    }
+    .badge.current{background:var(--accent);color:#fff}
+    .badge.past{background:var(--muted-bg);color:var(--muted)}
+    .tl-org{
+      font-family:'Newsreader',serif;
+      font-style:italic;
+      font-size:1.05rem;
+      color:var(--accent-dk);
+      margin-bottom:.1rem;
+    }
+    .tl-period{
+      font-family:'Inter',sans-serif;
+      font-size:.78rem;
+      color:var(--muted);
+      margin-bottom:var(--s-2);
+    }
+    .tl-desc{
+      font-size:var(--t-base);
+      color:var(--secondary);
+      line-height:1.65;
+      max-width:var(--prose-max);
+    }
+    .tl-desc ul{list-style:none;padding:0;margin-top:var(--s-1)}
+    .tl-desc li{
+      position:relative;
+      padding-left:var(--s-3);
+      margin-bottom:var(--s-1);
+    }
+    .tl-desc li::before{
+      content:'—';
+      position:absolute;left:0;
+      color:var(--accent);
+    }
+
+    /* ============================================================
+       PUBLICATIONS — academic citation format
+       ============================================================ */
+    .pub-year-group{
+      max-width:920px;
+      margin-bottom:var(--s-5);
+      display:grid;
+      grid-template-columns:80px 1fr;
+      gap:var(--s-4);
+      align-items:start;
+    }
+    .pub-year-group:last-of-type{margin-bottom:0}
+    .pub-year-head{
+      font-family:'Newsreader',serif;
+      font-size:1.5rem;
+      font-weight:600;
+      color:var(--accent);
+      letter-spacing:-.01em;
+      font-variant-numeric:tabular-nums;
+      padding-top:var(--s-4);
+      position:sticky;
+      top:84px;
+      line-height:1;
+    }
+    .pub-list{
+      max-width:920px;
+      list-style:none;
+      padding:0;
+    }
+    .pub-card{
+      display:grid;
+      grid-template-columns:3rem 1fr;
+      gap:var(--s-2);
+      padding:var(--s-4) 0;
+      border-bottom:1px solid var(--border);
+    }
+    .pub-card:last-child{border-bottom:none}
+    .pub-card::before{
+      content:"[" counter(pub-global) "]";
+      counter-increment:pub-global;
+      font-family:'Inter',sans-serif;
+      font-size:.85rem;
+      color:var(--muted);
+      font-variant-numeric:tabular-nums;
+      padding-top:.2rem;
+    }
+    #publications{counter-reset:pub-global}
+    .pub-link{
+      font-family:'Inter',sans-serif;
+      font-size:.76rem;
+      color:var(--muted);
+      text-decoration:none;
+      padding:.1rem .45rem;
+      border:1px solid var(--border);
+      border-radius:2px;
+      letter-spacing:.02em;
+      transition:all .15s;
+    }
+    .pub-link:hover{
+      color:var(--accent);
+      border-color:var(--accent);
+      background:var(--accent-lt);
+      text-decoration:none;
+    }
+    .pub-authors{
+      font-family:'Newsreader',serif;
+      font-size:1rem;
+      color:var(--secondary);
+      margin-bottom:.15rem;
+    }
+    .pub-authors .me{
+      color:var(--primary);
+      font-weight:600;
+      border-bottom:1px solid var(--accent);
+    }
+    .pub-title{
+      font-family:'Newsreader',serif;
+      font-size:1.125rem;
+      font-weight:500;
+      color:var(--primary);
+      line-height:1.35;
+      margin-bottom:var(--s-1);
+    }
+    .pub-meta{
+      display:flex;align-items:baseline;gap:var(--s-2);
+      flex-wrap:wrap;
+    }
+    .pub-venue{
+      font-family:'Newsreader',serif;
+      font-style:italic;
+      font-size:1rem;
+      color:var(--accent-dk);
+      font-weight:500;
+    }
+    .pub-year{
+      font-family:'Inter',sans-serif;
+      font-size:.82rem;
+      color:var(--muted);
+      font-variant-numeric:tabular-nums;
+    }
+    .pub-badge{
+      font-family:'Inter',sans-serif;
+      font-size:.62rem;
+      padding:.1rem .45rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:600;
+      border-radius:2px;
+    }
+    .pub-badge.oral{
+      background:var(--accent-lt);
+      color:var(--accent-dk);
+      border:1px solid #E8CFD3;
+    }
+    .pub-badge.best{
+      background:#FDF5E2;
+      color:#8A6D1C;
+      border:1px solid #EAD9A7;
+    }
+    .pub-badge.winner{
+      background:var(--muted-bg);
+      color:var(--primary);
+      border:1px solid var(--border-dk);
+    }
+
+    /* ============================================================
+       AWARDS — editorial bylines
+       ============================================================ */
+    .awards-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:0 var(--s-6);
+    }
+    .award-card{
+      display:grid;
+      grid-template-columns:28px 1fr;
+      gap:var(--s-3);
+      padding:var(--s-3) 0;
+      border-bottom:1px solid var(--border);
+      align-items:start;
+    }
+    .award-icon{
+      color:var(--accent);
+      font-size:1rem;
+      padding-top:.35rem;
+    }
+    .award-title{
+      font-family:'Newsreader',serif;
+      font-size:1.05rem;
+      font-weight:500;
+      color:var(--primary);
+      line-height:1.4;
+      margin-bottom:.15rem;
+    }
+    .award-meta{
+      font-family:'Inter',sans-serif;
+      font-size:.78rem;
+      color:var(--muted);
+      letter-spacing:.01em;
+    }
+
+    /* ============================================================
+       CONTACT
+       ============================================================ */
+    #contact{padding-bottom:var(--s-8)}
+    .contact-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 1.2fr) minmax(0, 1fr);
+      gap:var(--s-6);
+      align-items:start;
+    }
+    .contact-info p{
+      font-size:var(--t-md);
+      line-height:1.7;
+      color:var(--fg);
+      margin-bottom:var(--s-4);
+      max-width:var(--prose-max);
+    }
+    .contact-info p strong{color:var(--primary);font-weight:600}
+    .contact-info p strong.highlight{
+      background:linear-gradient(to top, var(--accent-lt) 40%, transparent 40%);
+      padding:0 .08em;
+    }
+    .contact-links{
+      list-style:none;
+      display:flex;flex-direction:column;
+      border-top:1px solid var(--border);
+    }
+    .contact-link{
+      display:grid;
+      grid-template-columns:28px 80px 1fr;
+      gap:var(--s-3);
+      align-items:center;
+      padding:var(--s-3) 0;
+      border-bottom:1px solid var(--border);
+      font-family:'Inter',sans-serif;
+      font-size:.92rem;
+      color:var(--secondary);
+      text-decoration:none;
+      transition:color .15s, background .15s;
+    }
+    .contact-link:hover{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    .contact-link:hover .cl-value{text-decoration:underline;text-underline-offset:3px}
+    .contact-link i{
+      color:var(--accent);
+      font-size:.95rem;
+    }
+    .cl-label{
+      color:var(--muted);
+      font-size:.7rem;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      font-weight:500;
+    }
+    .cl-value{color:var(--primary)}
+
+    .contact-card{
+      background:var(--bg-2);
+      border:1px solid var(--border);
+      border-top:3px solid var(--accent);
+      padding:var(--s-5);
+    }
+    .contact-card h3{
+      font-family:'Newsreader',serif;
+      font-size:var(--t-lg);
+      font-weight:600;
+      color:var(--primary);
+      margin-bottom:var(--s-3);
+    }
+    .glance-row{
+      display:flex;justify-content:space-between;
+      align-items:baseline;
+      padding:.55rem 0;
+      border-bottom:1px dotted var(--border);
+      font-family:'Inter',sans-serif;
+      font-size:.85rem;
+    }
+    .glance-row:last-of-type{border-bottom:none}
+    .glance-label{color:var(--muted)}
+    .glance-value{color:var(--primary);font-weight:500}
+    .glance-value.accent{color:var(--accent);font-weight:600}
+    .glance-projects{
+      margin-top:var(--s-3);
+      padding-top:var(--s-3);
+      border-top:1px solid var(--border);
+    }
+    .glance-projects > .glance-label{
+      display:block;margin-bottom:var(--s-2);
+      font-size:.7rem;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      font-family:'Inter',sans-serif;
+    }
+    .glance-projects ol{
+      padding-left:var(--s-4);
+      color:var(--secondary);
+      font-family:'Newsreader',serif;
+      line-height:1.75;
+      font-size:.98rem;
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    footer{
+      border-top:1px solid var(--border);
+      padding:var(--s-5) var(--s-5);
+      background:var(--bg-2);
+      margin-top:var(--s-6);
+    }
+    .footer-inner{
+      max-width:var(--grid-max);
+      margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      font-family:'Inter',sans-serif;
+      font-size:.76rem;
+      color:var(--muted);
+      flex-wrap:wrap;gap:var(--s-2);
+      letter-spacing:.01em;
+    }
+    .footer-inner em{color:var(--accent);font-style:normal;font-weight:500}
+
+    /* ============================================================
+       REVEAL ANIMATION (honors reduced-motion)
+       ============================================================ */
+    .reveal{
+      opacity:0;transform:translateY(16px);
+      transition:opacity .55s ease,transform .55s ease;
+    }
+    .reveal.visible{opacity:1;transform:none}
+
+    /* ============================================================
+       RESPONSIVE — Swiss Modernism breakpoints 375/768/1024/1440
+       ============================================================ */
+    @media(max-width:1024px){
+      .hero-grid{grid-template-columns:minmax(0, 1fr) 240px;gap:var(--s-5)}
+      .about-grid{grid-template-columns:1fr;gap:var(--s-5)}
+      .about-side{position:static}
+    }
+    @media(max-width:768px){
+      body{font-size:1rem}
+      .nav-inner{padding:var(--s-3) var(--s-4)}
+      .nav-links{
+        position:fixed;top:0;right:-100%;
+        height:100vh;width:250px;
+        background:var(--bg);
+        flex-direction:column;
+        justify-content:center;
+        padding:var(--s-5);gap:var(--s-4);
+        transition:right .3s;
+        border-left:1px solid var(--border);
+        box-shadow:-8px 0 40px rgba(0,0,0,.06);
+      }
+      .nav-links.open{right:0}
+      .nav-hamburger{display:flex}
+      .hero{padding:var(--s-6) var(--s-4) var(--s-5)}
+      .hero-grid{grid-template-columns:1fr;gap:var(--s-5)}
+      .hero-portrait{max-width:240px;margin:0 auto}
+      main{padding:0 var(--s-4)}
+      section{padding:var(--s-6) 0 var(--s-5)}
+      .research-grid{grid-template-columns:1fr;gap:var(--s-3)}
+      .awards-grid{grid-template-columns:1fr;gap:0}
+      .pub-year-group{
+        grid-template-columns:1fr;
+        gap:var(--s-2);
+      }
+      .pub-year-head{
+        position:static;
+        padding-top:0;
+        padding-bottom:var(--s-1);
+        border-bottom:2px solid var(--accent);
+        display:inline-block;
+      }
+      .contact-grid{grid-template-columns:1fr;gap:var(--s-5)}
+      .meta-item{grid-template-columns:90px 1fr}
+      .contact-link{grid-template-columns:24px 70px 1fr}
+      .footer-inner{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){
+      .hero-cta{flex-direction:column;align-items:stretch}
+      .btn{justify-content:center}
+      h1.hero-name{font-size:2.5rem}
+    }
+
+    /* ============================================================
+       PRINT — academic CV output
+       ============================================================ */
+    @media print{
+      nav.primary, .hero-cta, .hero-social, footer, .nav-hamburger, .skip{display:none !important}
+      body{font-size:10.5pt;color:#000;background:#fff}
+      a{color:#000;text-decoration:none}
+      .hero{padding:0 0 .5in;border:none}
+      main{padding:0}
+      section{padding:.3in 0;border-top:1px solid #999;page-break-inside:avoid}
+      h1.hero-name{font-size:24pt}
+      h2.section-title{font-size:14pt}
+      .about-side, .contact-card{border:1px solid #ccc;background:#fff}
+      .hero-portrait{max-width:2in}
+      .reveal{opacity:1 !important;transform:none !important}
+    }
+  </style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- NAVIGATION -->
+<nav class="primary" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Home">YuanFu <em>Yang</em></a>
+    <ul class="nav-links" id="navLinks" role="menubar">
+      <li role="none"><a role="menuitem" href="#about">About</a></li>
+      <li role="none"><a role="menuitem" href="#research">Research</a></li>
+      <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+      <li role="none"><a role="menuitem" href="#publications">Publications</a></li>
+      <li role="none"><a role="menuitem" href="#awards">Awards</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      <li role="none"><a role="menuitem" href="https://rossi-lab.vercel.app/" target="_blank" rel="noopener" class="lab-link">ROSSI Lab &rarr;</a></li>
+    </ul>
+    <button type="button" class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-eyebrow">AI &amp; Robotics Researcher</div>
+      <h1 class="hero-name">YuanFu Yang</h1>
+      <div class="hero-title">Assistant Professor</div>
+      <div class="hero-affil">
+        Institute of Artificial Intelligence Innovation<br>
+        National Yang Ming Chiao Tung University (NYCU), Hsinchu, Taiwan
+      </div>
+      <p class="hero-desc">
+        Assistant Professor at <strong>NYCU Institute of Artificial Intelligence Innovation</strong>.
+        Pioneering research in Computer Vision, Generative AI, and Robotic AI — bridging the gap between
+        intelligent systems and real-world automation. Former Data Scientist &amp; Team Lead at <strong>TSMC</strong>.
+      </p>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-primary">Research</a>
+        <a href="https://scholar.google.com.tw/citations?user=Xzx8xqUAAAAJ" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+        </a>
+        <a href="mailto:yfyangd@gmail.com" class="btn btn-outline">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+        </a>
+      </div>
+      <div class="hero-social" aria-label="Social links">
+        <a href="https://github.com/yfyangd" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/yuanfu-yang" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/yfyangd" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://orcid.org/0000-0002-6612-7165" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <figure class="hero-portrait">
+      <img src="images/yyf2.jpg" alt="Portrait of YuanFu Yang" loading="eager" />
+      <figcaption class="portrait-caption">YuanFu Yang · NYCU</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-head reveal">
+    <div class="eyebrow">01 — Biography</div>
+    <h2 class="section-title">About</h2>
+    <p class="section-sub">Scholar, engineer, and builder of perceptive machines.</p>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p class="lead">
+        I am an <strong class="highlight">Assistant Professor</strong> at the Institute of Artificial Intelligence Innovation,
+        National Yang Ming Chiao Tung University (NYCU), Taiwan, where I lead research at the intersection
+        of computer vision, generative AI, and robotic intelligence.
+      </p>
+      <p>
+        Prior to academia, I spent <strong>17 years at TSMC</strong> (2006–2023) as a Data Scientist and
+        Team Lead, where I drove AI adoption for semiconductor manufacturing — developing state-of-the-art
+        deep learning systems for defect inspection, yield prediction, and robotic automation.
+      </p>
+      <p>
+        My mission is to build <strong>intelligent machines</strong> that perceive, reason, and act in
+        complex real-world environments, with a focus on bridging simulation and reality.
+      </p>
+      <div class="about-meta">
+        <div class="meta-item"><span class="meta-label">Position</span><span>Assistant Professor, NYCU</span></div>
+        <div class="meta-item"><span class="meta-label">Lab</span><a href="https://rossi-lab.vercel.app/" target="_blank" rel="noopener">ROSSI Lab</a></div>
+        <div class="meta-item"><span class="meta-label">Education</span><span>Ph.D. in EECS, National Tsing Hua University</span></div>
+        <div class="meta-item"><span class="meta-label">Location</span><span>Hsinchu, Taiwan</span></div>
+        <div class="meta-item"><span class="meta-label">Email</span><a href="mailto:yfyangd@gmail.com">yfyangd@gmail.com</a></div>
+      </div>
+    </div>
+    <aside class="about-side" aria-label="Research interests">
+      <h3>Research Interests</h3>
+      <div class="interest-group">
+        <div class="interest-label">Computer Vision</div>
+        <div class="interest-items">Object detection · 3D reconstruction · Segmentation · Foundation models · Defect inspection</div>
+      </div>
+      <div class="interest-group">
+        <div class="interest-label">Generative AI</div>
+        <div class="interest-items">Diffusion models · Digital twins · Anomaly detection · Process optimization</div>
+      </div>
+      <div class="interest-group">
+        <div class="interest-label">Robotic AI</div>
+        <div class="interest-items">Reinforcement learning · Sim-to-real transfer · Vision-language models · Manipulation</div>
+      </div>
+      <div class="interest-group">
+        <div class="interest-label">Tools &amp; Frameworks</div>
+        <div class="interest-items">PyTorch · Python · ROS · CUDA · Isaac Sim · OpenCV</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="section-head reveal">
+    <div class="eyebrow">02 — Research</div>
+    <h2 class="section-title">Research Focus</h2>
+    <p class="section-sub">Three interleaved threads — perception, generation, and embodiment.</p>
+  </div>
+  <div class="research-grid reveal">
+    <article class="research-card">
+      <div class="rc-num">01 / CV</div>
+      <div class="rc-icon" aria-hidden="true"><i class="fas fa-eye"></i></div>
+      <h3 class="rc-title">Computer Vision</h3>
+      <p class="rc-desc">
+        Developing 2D and 3D foundation models for robust perception. Our work spans
+        object detection, instance segmentation, depth estimation, and dense 3D scene
+        reconstruction — with applications in smart manufacturing and autonomous systems.
+      </p>
+      <div class="rc-topics">
+        <span class="rc-topic">2D/3D Foundation Models</span>
+        <span class="rc-topic">Object Detection</span>
+        <span class="rc-topic">3D Reconstruction</span>
+        <span class="rc-topic">Defect Inspection</span>
+        <span class="rc-topic">Small Object Tracking</span>
+      </div>
+    </article>
+    <article class="research-card">
+      <div class="rc-num">02 / GEN</div>
+      <div class="rc-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+      <h3 class="rc-title">Generative AI</h3>
+      <p class="rc-desc">
+        Harnessing diffusion models and generative architectures to create digital twins,
+        synthesize training data, and model complex industrial processes. Bridging the gap
+        between simulation and physical reality through learned generative representations.
+      </p>
+      <div class="rc-topics">
+        <span class="rc-topic">Diffusion Models</span>
+        <span class="rc-topic">Generative Digital Twins</span>
+        <span class="rc-topic">Process Optimization</span>
+        <span class="rc-topic">Anomaly Detection</span>
+        <span class="rc-topic">Quantum-Classical AI</span>
+      </div>
+    </article>
+    <article class="research-card">
+      <div class="rc-num">03 / ROB</div>
+      <div class="rc-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
+      <h3 class="rc-title">Robotic AI</h3>
+      <p class="rc-desc">
+        Building robots that see, understand, and act. Our research combines reinforcement
+        learning, vision-language models, and sim-to-real transfer to create intelligent
+        agents capable of complex manipulation and navigation in unstructured environments.
+      </p>
+      <div class="rc-topics">
+        <span class="rc-topic">Reinforcement Learning</span>
+        <span class="rc-topic">Vision-Language Models</span>
+        <span class="rc-topic">Sim-to-Real Transfer</span>
+        <span class="rc-topic">Robot Manipulation</span>
+        <span class="rc-topic">Autonomous Agents</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-head reveal">
+    <div class="eyebrow">03 — Experience</div>
+    <h2 class="section-title">Appointments</h2>
+    <p class="section-sub">From silicon to students — an industry-to-academia arc.</p>
+  </div>
+  <ol class="timeline reveal" aria-label="Career timeline">
+    <li class="tl-item current">
+      <span class="tl-dot" aria-hidden="true"></span>
+      <div class="tl-header">
+        <div class="tl-role">Assistant Professor</div>
+        <span class="badge current">Current</span>
+      </div>
+      <div class="tl-org">Institute of AI Innovation, NYCU</div>
+      <div class="tl-period">2024 – Present</div>
+      <div class="tl-desc">
+        Leading the ROSSI Lab with research focus on Computer Vision, Generative AI, and Robotic AI.
+        Principal Investigator for the Frontier Robotic AI Project (NSTC 2025–2027).
+        Actively recruiting graduate and doctoral students.
+      </div>
+    </li>
+    <li class="tl-item current">
+      <span class="tl-dot" aria-hidden="true"></span>
+      <div class="tl-header">
+        <div class="tl-role">Chief Consultant</div>
+        <span class="badge current">Current</span>
+      </div>
+      <div class="tl-org">MIRLE Automation</div>
+      <div class="tl-period">2025 – Present</div>
+      <div class="tl-desc">
+        Providing strategic AI consulting for industrial automation systems, integrating
+        computer vision and robotic AI solutions into manufacturing workflows.
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-dot" aria-hidden="true"></span>
+      <div class="tl-header">
+        <div class="tl-role">AI Consultant</div>
+        <span class="badge past">2024 – 2025</span>
+      </div>
+      <div class="tl-org">LCY GROUP</div>
+      <div class="tl-period">2024 – 2025</div>
+      <div class="tl-desc">
+        Applied AI expertise to accelerate industrial digitalization initiatives across chemical
+        manufacturing processes and supply chain optimization.
+      </div>
+    </li>
+    <li class="tl-item">
+      <span class="tl-dot" aria-hidden="true"></span>
+      <div class="tl-header">
+        <div class="tl-role">Data Scientist &amp; Team Lead</div>
+        <span class="badge past">17 Years</span>
+      </div>
+      <div class="tl-org">TSMC (Taiwan Semiconductor Manufacturing Co.)</div>
+      <div class="tl-period">2006 – 2023</div>
+      <div class="tl-desc">
+        <ul>
+          <li>Led AI/ML teams developing deep learning systems for wafer defect inspection, classification, and yield prediction.</li>
+          <li>Deployed robotic automation systems improving factory throughput and quality control.</li>
+          <li>Progressed from engineer to Chief Engineer and Supervisor, mentoring cross-functional teams.</li>
+          <li>Won multiple internal innovation competitions for AI-driven manufacturing solutions.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-head reveal">
+    <div class="eyebrow">04 — Publications</div>
+    <h2 class="section-title">Publications</h2>
+    <p class="section-sub">Peer-reviewed papers, journal articles, and competition entries — in reverse chronological order.</p>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2025</div>
+    <ol class="pub-list" start="1">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Photolithography Overlay Map Generation with Implicit Knowledge Distillation Diffusion Transformer</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Proc. IEEE/CVF International Conference on Computer Vision (ICCV), Honolulu</span>
+            <span class="pub-year">2025</span>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">DLSF: Dual-Layer Synergistic Fusion for High-Fidelity Image Synthesis</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Int'l Conf. on Machine Vision Applications (MVA), Kyoto</span>
+            <span class="pub-year">2025</span>
+            <span class="pub-badge oral">Oral</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Boosting Small Object Tracking via Collaborative Detection Transformer</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Int'l Conf. on Machine Vision Applications (MVA), Kyoto</span>
+            <span class="pub-year">2025</span>
+            <span class="pub-badge oral">Oral</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">MVA 2025 Small Multi-Object Tracking for Spotting Birds Challenge: Dataset, Methods, and Results</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Int'l Conf. on Machine Vision Applications (MVA), Kyoto</span>
+            <span class="pub-year">2025</span>
+            <span class="pub-badge winner">Challenge Winner</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2024</div>
+    <ol class="pub-list" start="5">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Knowledge Distillation Cross Domain Diffusion Model: A Generative AI Approach for Defect Pattern Segmentation</div>
+          <div class="pub-meta">
+            <span class="pub-venue">IEEE Transactions on Semiconductor Manufacturing (IEEE TSM)</span>
+            <span class="pub-year">2024</span>
+            <a class="pub-link" href="https://doi.org/10.1109/TSM.2024" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2023</div>
+    <ol class="pub-list" start="6">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Medium. Permeation: SARS-COV-2 Painting Creation by Generative Model</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Kyoto Asian Modern Art Exhibition (KAMC), Kyoto</span>
+            <span class="pub-year">2023</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2304.11354" target="_blank" rel="noopener">arXiv:2304.11354</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2022</div>
+    <ol class="pub-list" start="7">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Semiconductor Defect Detection by Hybrid Classical-Quantum Deep Learning</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), New Orleans</span>
+            <span class="pub-year">2022</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">QRF: Implicit Neural Representations with Quantum Radiance Fields</div>
+          <div class="pub-meta">
+            <span class="pub-venue">arXiv preprint</span>
+            <span class="pub-year">2022</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2211.03418" target="_blank" rel="noopener">arXiv:2211.03418</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Hybrid Quantum-Classical Machine Learning for Lithography Hotspot Detection</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Advanced Semiconductor Manufacturing Conference (ASMC), Saratoga Springs</span>
+            <span class="pub-year">2022</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2021</div>
+    <ol class="pub-list" start="10">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Semiconductor Defect Pattern Classification by Self-Proliferation-and-Attention Neural Network</div>
+          <div class="pub-meta">
+            <span class="pub-venue">IEEE Transactions on Semiconductor Manufacturing (IEEE TSM)</span>
+            <span class="pub-year">2021</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">A Novel Deep Learning Architecture for Global Defect Classification: Self-Proliferating Neural Network (SPNet)</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Advanced Semiconductor Manufacturing Conference (ASMC), Milpitas</span>
+            <span class="pub-year">2021</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2020</div>
+    <ol class="pub-list" start="12">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">Double Feature Extraction Method for Wafer Map Classification Based on Convolution Neural Network</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Advanced Semiconductor Manufacturing Conference (ASMC), Saratoga Springs</span>
+            <span class="pub-year">2020</span>
+            <span class="pub-badge best">Best Paper</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div class="pub-year-group reveal">
+    <div class="pub-year-head">2019</div>
+    <ol class="pub-list" start="13">
+      <li class="pub-card">
+        <div>
+          <div class="pub-authors"><span class="me">Y.-F. Yang</span>, et al.</div>
+          <div class="pub-title">A Deep Learning Model for Identification of Defect Patterns in Semiconductor Wafer Map</div>
+          <div class="pub-meta">
+            <span class="pub-venue">Advanced Semiconductor Manufacturing Conference (ASMC), Saratoga Springs</span>
+            <span class="pub-year">2019</span>
+            <a class="pub-link" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">IEEE Xplore</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <div style="margin-top:var(--s-5)">
+    <a href="https://scholar.google.com.tw/citations?user=Xzx8xqUAAAAJ" target="_blank" rel="noopener" class="btn btn-outline">
+      <i class="fas fa-external-link-alt" aria-hidden="true"></i> View on Google Scholar
+    </a>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="section-head reveal">
+    <div class="eyebrow">05 — Recognition</div>
+    <h2 class="section-title">Awards &amp; Honors</h2>
+    <p class="section-sub">Selected distinctions and service roles.</p>
+  </div>
+  <div class="awards-grid reveal">
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-trophy"></i></div>
+      <div>
+        <div class="award-title">MVA Small Multi-Object Tracking Challenge — Winner</div>
+        <div class="award-meta">Machine Vision Applications · 2025</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-medal"></i></div>
+      <div>
+        <div class="award-title">Best Paper Award</div>
+        <div class="award-meta">SEMI Advanced Semiconductor Manufacturing Conference (ASMC) · 2020</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-palette"></i></div>
+      <div>
+        <div class="award-title">CVPR TechArt Exhibition — Selected Piece</div>
+        <div class="award-meta">CVPR, Vancouver · 2023</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-star"></i></div>
+      <div>
+        <div class="award-title">TSMC Internal Innovation Competition — Multiple Awards</div>
+        <div class="award-meta">1st Place, AI &amp; Automation Category · 2018–2022</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-users-cog"></i></div>
+      <div>
+        <div class="award-title">Area Chair — Machine Vision Applications Conference</div>
+        <div class="award-meta">MVA 2025 · Present</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-microscope"></i></div>
+      <div>
+        <div class="award-title">Principal Investigator — Frontier Robotic AI Project</div>
+        <div class="award-meta">NSTC Grant · 2025–2027</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-head reveal">
+    <div class="eyebrow">06 — Contact</div>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-sub">Open to collaborations, student applications, and speaking invitations.</p>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <p>
+        I am actively recruiting <strong class="highlight">graduate and doctoral students</strong>
+        passionate about AI, robotics, and computer vision. If you are interested in joining
+        the ROSSI Lab or collaborating on research, feel free to reach out.
+      </p>
+      <ul class="contact-links">
+        <li>
+          <a href="mailto:yfyangd@gmail.com" class="contact-link">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span class="cl-label">Email</span>
+            <span class="cl-value">yfyangd@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/yfyangd" target="_blank" rel="noopener" class="contact-link">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span class="cl-label">GitHub</span>
+            <span class="cl-value">github.com/yfyangd</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yuanfu-yang" target="_blank" rel="noopener" class="contact-link">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            <span class="cl-label">LinkedIn</span>
+            <span class="cl-value">yuanfu-yang</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com.tw/citations?user=Xzx8xqUAAAAJ" target="_blank" rel="noopener" class="contact-link">
+            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            <span class="cl-label">Scholar</span>
+            <span class="cl-value">Google Scholar Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://rossi-lab.vercel.app/" target="_blank" rel="noopener" class="contact-link">
+            <i class="fas fa-flask" aria-hidden="true"></i>
+            <span class="cl-label">Lab</span>
+            <span class="cl-value">rossi-lab.vercel.app</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <aside class="contact-card" aria-label="Lab status at a glance">
+      <h3>At a Glance</h3>
+      <div class="glance-row">
+        <span class="glance-label">Lab Status</span>
+        <span class="glance-value accent">Active</span>
+      </div>
+      <div class="glance-row">
+        <span class="glance-label">Recruiting</span>
+        <span class="glance-value">MS / PhD Students</span>
+      </div>
+      <div class="glance-row">
+        <span class="glance-label">Office</span>
+        <span class="glance-value">NYCU, Hsinchu</span>
+      </div>
+      <div class="glance-row">
+        <span class="glance-label">Contact</span>
+        <span class="glance-value">yfyangd@gmail.com</span>
+      </div>
+      <div class="glance-projects">
+        <span class="glance-label">Active Projects</span>
+        <ol>
+          <li>Frontier Robotic AI (NSTC)</li>
+          <li>Generative Digital Twins</li>
+          <li>Sim-to-Real Transfer</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>&copy; 2025 <em>YuanFu Yang</em> · NYCU Institute of Artificial Intelligence Innovation</div>
+    <div>Hsinchu, Taiwan</div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll (honors prefers-reduced-motion via CSS)
+  (function(){
+    if(!('IntersectionObserver' in window)){
+      document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+      return;
+    }
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  })();
+
+  // Mobile nav
+  function toggleMenu(){
+    const nav = document.getElementById('navLinks');
+    const btn = document.getElementById('hamburger');
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('hamburger').setAttribute('aria-expanded','false');
+    });
+  });
+
+  // Active section in nav (aria-current)
+  (function(){
+    const sections = document.querySelectorAll('main section[id], header[id]');
+    const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+    if(!sections.length || !links.length) return;
+    const byId = new Map(links.map(l=>[l.getAttribute('href').slice(1), l]));
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        const link = byId.get(e.target.id);
+        if(!link) return;
+        if(e.isIntersecting){
+          links.forEach(l=>l.removeAttribute('aria-current'));
+          link.setAttribute('aria-current','true');
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px',threshold:0});
+    sections.forEach(s=>obs.observe(s));
+  })();
+</script>
+</body>
+</html>
