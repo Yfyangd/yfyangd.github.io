@@ -630,6 +630,172 @@
     }
 
     /* ============================================================
+       TEACHING — course cards + weekly schedule tables
+       ============================================================ */
+    .course-list{
+      display:flex;flex-direction:column;gap:var(--s-5);
+    }
+    .course-card{
+      background:var(--bg);
+      border:1px solid var(--border);
+      border-top:3px solid var(--accent);
+      padding:var(--s-5) var(--s-5);
+    }
+    .course-head{
+      padding-bottom:var(--s-3);
+      margin-bottom:var(--s-4);
+      border-bottom:1px solid var(--border);
+    }
+    .course-title{
+      font-family:'Newsreader',serif;
+      font-size:clamp(1.4rem, 2.5vw, 1.75rem);
+      font-weight:600;
+      color:var(--primary);
+      letter-spacing:-.015em;
+      margin-bottom:var(--s-2);
+      line-height:1.2;
+    }
+    .course-meta{
+      display:flex;flex-wrap:wrap;gap:var(--s-1);
+      font-family:'Inter',sans-serif;
+      font-size:.75rem;
+      margin-top:var(--s-1);
+    }
+    .course-chip{
+      padding:.2rem .55rem;
+      letter-spacing:.04em;
+      border-radius:2px;
+      border:1px solid var(--border);
+      color:var(--muted);
+      background:var(--bg-2);
+    }
+    .course-chip.type{
+      background:var(--accent-lt);
+      border-color:#E8CFD3;
+      color:var(--accent-dk);
+      font-weight:600;
+      text-transform:uppercase;
+      font-size:.68rem;
+      letter-spacing:.08em;
+    }
+    .course-body h4{
+      font-family:'Inter',sans-serif;
+      font-size:.75rem;
+      font-weight:600;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--accent);
+      margin:var(--s-4) 0 var(--s-2);
+    }
+    .course-body h4:first-child{margin-top:0}
+    .course-body p{
+      font-size:var(--t-base);
+      color:var(--secondary);
+      line-height:1.7;
+      margin-bottom:var(--s-2);
+      max-width:var(--prose-max);
+    }
+    .course-body p strong{color:var(--primary);font-weight:600}
+    .course-body ul{
+      list-style:none;
+      padding:0;
+      margin-bottom:var(--s-2);
+    }
+    .course-body ul li{
+      position:relative;
+      padding-left:var(--s-3);
+      margin-bottom:var(--s-1);
+      font-size:var(--t-base);
+      color:var(--secondary);
+      line-height:1.65;
+    }
+    .course-body ul li::before{
+      content:'—';
+      position:absolute;left:0;
+      color:var(--accent);
+    }
+    .course-body ul ul{
+      margin-top:var(--s-1);
+      margin-bottom:0;
+      padding-left:var(--s-3);
+    }
+    .course-body ul ul li::before{content:'·'}
+    .course-body strong{color:var(--primary);font-weight:600}
+    .course-body a{color:var(--accent);word-break:break-word}
+
+    .schedule-wrap{
+      overflow-x:auto;
+      margin:var(--s-2) 0 var(--s-3);
+      border:1px solid var(--border);
+    }
+    table.schedule{
+      width:100%;
+      border-collapse:collapse;
+      font-family:'Inter',sans-serif;
+      font-size:.82rem;
+      color:var(--secondary);
+      min-width:680px;
+    }
+    table.schedule thead{
+      background:var(--bg-2);
+      border-bottom:2px solid var(--border);
+    }
+    table.schedule th{
+      text-align:left;
+      padding:.6rem .7rem;
+      font-weight:600;
+      font-size:.68rem;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    table.schedule td{
+      padding:.55rem .7rem;
+      border-bottom:1px solid var(--border);
+      vertical-align:top;
+      line-height:1.5;
+    }
+    table.schedule tbody tr:last-child td{border-bottom:none}
+    table.schedule tbody tr:hover{background:var(--bg-2)}
+    table.schedule td:first-child{
+      font-variant-numeric:tabular-nums;
+      color:var(--muted);
+      text-align:right;
+      width:3rem;
+      font-weight:500;
+    }
+    table.schedule td:nth-child(2){
+      font-variant-numeric:tabular-nums;
+      color:var(--primary);
+      font-weight:500;
+      white-space:nowrap;
+      width:4rem;
+    }
+    table.schedule td:nth-child(3){
+      color:var(--primary);
+      min-width:14rem;
+    }
+    table.schedule a{
+      color:var(--accent);
+      text-decoration:none;
+      padding:.08rem .4rem;
+      margin:0 .1rem 0 0;
+      display:inline-block;
+      border:1px solid var(--border);
+      border-radius:2px;
+      font-size:.72rem;
+      font-weight:500;
+      white-space:nowrap;
+      transition:all .15s;
+    }
+    table.schedule a:hover{
+      background:var(--accent-lt);
+      border-color:var(--accent);
+      text-decoration:none;
+    }
+
+    /* ============================================================
        PUBLICATIONS — academic citation format
        ============================================================ */
     .pub-year-group{
@@ -1006,6 +1172,7 @@
       <li role="none"><a role="menuitem" href="#about">About</a></li>
       <li role="none"><a role="menuitem" href="#research">Research</a></li>
       <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+      <li role="none"><a role="menuitem" href="#teaching">Teaching</a></li>
       <li role="none"><a role="menuitem" href="#publications">Publications</a></li>
       <li role="none"><a role="menuitem" href="#awards">Awards</a></li>
       <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
@@ -1241,10 +1408,507 @@
   </ol>
 </section>
 
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="section-head reveal">
+    <div class="eyebrow">04 — Teaching</div>
+    <h2 class="section-title">Courses</h2>
+    <p class="section-sub">Graduate courses taught at the Institute of Artificial Intelligence Innovation, NYCU.</p>
+  </div>
+
+  <div class="course-list reveal">
+
+    <!-- Course 1: Computer Vision -->
+    <article class="course-card" id="teaching-cv">
+      <header class="course-head">
+        <h3 class="course-title">Computer Vision</h3>
+        <div class="course-meta">
+          <span class="course-chip type">Graduate Course</span>
+          <span class="course-chip">Spring 2025</span>
+          <span class="course-chip">Institute of AI Innovation, NYCU</span>
+          <span class="course-chip">Hsinchu, Taiwan</span>
+        </div>
+      </header>
+      <div class="course-body">
+        <h4>Course Overview &amp; Objectives</h4>
+        <p>
+          This course aims to provide students with a deep understanding of the fundamental concepts and
+          techniques of computer vision, including image formation, feature extraction, 3D reconstruction,
+          image segmentation, object recognition, deep learning, object detection, object tracking, and
+          facial recognition. It also aims to equip students with the implementation and application of
+          algorithms, models, and frameworks related to computer vision, enabling them to address computer
+          vision problems across various domains such as autonomous driving, smart homes, medical image
+          analysis, and more. Through this course, students will comprehend the limitations and challenges
+          of current computer vision applications and explore future development directions. By undertaking
+          this course, students will acquire the following abilities:
+        </p>
+        <ul>
+          <li>Fundamental knowledge and skills in computer vision and image processing.</li>
+          <li>Sensitivity and analytical skills toward emerging technologies and trends.</li>
+          <li>Capability to conduct independent research and development, possessing teamwork and project management abilities.</li>
+          <li>Innovative thinking and problem-solving skills, with the capacity to apply learned knowledge to promote technological innovation and societal progress.</li>
+        </ul>
+
+        <h4>Prerequisites</h4>
+        <ul>
+          <li><strong>Proficiency in Python</strong>
+            <ul>
+              <li>All class assignments will be in Python. If you have a lot of programming experience but in a different language (e.g. C++/Matlab/Javascript) you will probably be fine.</li>
+            </ul>
+          </li>
+          <li><strong>College Calculus, Linear Algebra</strong>
+            <ul>
+              <li>You should be comfortable taking derivatives and understanding matrix vector operations and notation.</li>
+            </ul>
+          </li>
+          <li><strong>Basic Probability and Statistics</strong>
+            <ul>
+              <li>You should know basics of probabilities, gaussian distributions, mean, standard deviation, etc.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Grading</h4>
+        <ul>
+          <li><strong>Assignments (40%)</strong> — Including programming assignments, literature review reports, etc.</li>
+          <li><strong>Midterm Report (20%)</strong> — Students are required to select a computer vision-related paper from the past three years and write a research report. Additional points will be awarded if the report includes a demo and technical implementation.</li>
+          <li><strong>Final Project (40%)</strong> — Students must choose a computer vision-related topic and produce both a research report and a practical implementation project. The grading criteria include a clear understanding of the problem, the innovation and practicality of the solution, and the completeness and effectiveness of the technical implementation.</li>
+          <li><strong>Class Participation (10%)</strong> — −1 each absent.</li>
+        </ul>
+
+        <h4>Office Hours</h4>
+        <ul>
+          <li>Monday 11:00–12:00 am</li>
+          <li>Room: Engineering Building-6 (374)</li>
+        </ul>
+
+        <h4>Schedule</h4>
+        <div class="schedule-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Wk</th><th>Date</th><th>Topic</th><th>Slides</th><th>Homework</th><th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td><td>2/18</td><td>Course Introduction</td>
+                <td>
+                  <a href="https://drive.google.com/uc?export=view&amp;id=1s4_PTH4wTaZ6IJd5FHNUbeWCKYSai2RB" target="_blank" rel="noopener">Lec0</a>
+                  <a href="https://drive.google.com/uc?export=view&amp;id=1Cr5gqdcqc62P26D48pt3KTpQm5robGi2" target="_blank" rel="noopener">Lec1</a>
+                </td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>2</td><td>2/25</td><td>CV Introduction / Image Formation</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1irSijxeFDStSOdRQbHK2jyWkeKWnwbbO" target="_blank" rel="noopener">Lec2</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>3</td><td>3/4</td><td>Intensity Transformation</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1-t36X9GqlvFeUtpJnG5-X14dqgo3Udab" target="_blank" rel="noopener">Lec3</a></td>
+                <td><a href="https://github.com/Rossi-Laboratory/Course-Lectures/blob/main/Computer%20Vision/Assignment1/Image%20Sensing%20Pipeline.md" target="_blank" rel="noopener">HW1: Image Sensing Pipeline</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td><td>3/11</td><td>Edge Detection</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1FEV0HP5DHu2gY58H0-AU2WHpE57LCdgk" target="_blank" rel="noopener">Lec4</a></td>
+                <td></td><td>Group Form Due</td>
+              </tr>
+              <tr>
+                <td>5</td><td>3/18</td><td>Corner Detection</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=16GKUUASBdXz51ESZI_vhyG8vAZ7UnB1g" target="_blank" rel="noopener">Lec5</a></td>
+                <td></td><td>HW1 Due</td>
+              </tr>
+              <tr>
+                <td>6</td><td>3/25</td><td>Line Detection</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1XdnxBQVSLEc3tH2QkayspxgtQYrlIcUZ" target="_blank" rel="noopener">Lec6</a></td>
+                <td><a href="https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment2" target="_blank" rel="noopener">HW2: Harris Corner Detection</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td><td>4/1</td><td>Camera Calibration</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1ZY8Ed7wc4v94sDFKKAxV6eECC-Nu3olF" target="_blank" rel="noopener">Lec7</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>8</td><td>4/8</td><td>Midterm Report</td>
+                <td></td><td></td>
+                <td>HW2 &amp; Midterm Report Due</td>
+              </tr>
+              <tr>
+                <td>9</td><td>4/15</td><td>Image Segmentation</td>
+                <td><a href="https://drive.google.com/file/d/1YFyVYZN4iXiU-17Eemh5tngAehFkYhZj/view?usp=sharing" target="_blank" rel="noopener">Lec8</a></td>
+                <td><a href="https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment3" target="_blank" rel="noopener">HW3: Camera Calibration</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10</td><td>4/22</td><td>Special Lecture</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>11</td><td>4/29</td><td>Object Detection</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1mw4TkojqAY_5_Y3s1KjjT-4tmkSJl-tl" target="_blank" rel="noopener">Lec9</a></td>
+                <td></td><td>HW3 Due</td>
+              </tr>
+              <tr>
+                <td>12</td><td>5/6</td><td>Deep Image Segmentation</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1o9YZaBdiBWiIbmYSJgq4wzkLYvCFrRZa" target="_blank" rel="noopener">Lec10</a></td>
+                <td><a href="https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/Computer%20Vision/Assignment4" target="_blank" rel="noopener">HW4: Image Segmentation</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>13</td><td>5/13</td><td>Image Classification</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1M6-1ipjL8l-ViZBSmyoEr5nlEhzv2xTk" target="_blank" rel="noopener">Lec11</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>14</td><td>5/20</td><td>VLM / LLM</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1oM5OzRD2VDXtOamyVeVxYXRrXrv1kq86" target="_blank" rel="noopener">Lec12</a></td>
+                <td></td><td>HW4 Due</td>
+              </tr>
+              <tr>
+                <td>15</td><td>5/27</td><td>3D Vision</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1na9-308WDmSbXSFx09TE6ME_eDNMburN" target="_blank" rel="noopener">Lec13</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>16</td><td>6/3</td><td>Final Project Presentation</td>
+                <td></td><td></td><td>Final Report Due</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://github.com/jbhuang0604/awesome-computer-vision" target="_blank" rel="noopener">Awesome Computer Vision</a></li>
+          <li><a href="https://github.com/ChristosChristofidis/awesome-deep-learning" target="_blank" rel="noopener">Awesome Deep Learning</a></li>
+        </ul>
+
+        <h4>Textbooks</h4>
+        <ul>
+          <li><a href="https://www.amazon.com/Programming-Computer-Vision-Python-algorithms/dp/1449316549" target="_blank" rel="noopener">Programming Computer Vision with Python</a></li>
+          <li><a href="http://szeliski.org/Book/" target="_blank" rel="noopener">Computer Vision: Algorithms and Applications</a></li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Course 2: Generative AI -->
+    <article class="course-card" id="teaching-genai">
+      <header class="course-head">
+        <h3 class="course-title">Generative AI</h3>
+        <div class="course-meta">
+          <span class="course-chip type">Graduate Course</span>
+          <span class="course-chip">Fall 2024</span>
+          <span class="course-chip">Institute of AI Innovation, NYCU</span>
+          <span class="course-chip">Hsinchu, Taiwan</span>
+        </div>
+      </header>
+      <div class="course-body">
+        <h4>Course Overview &amp; Objectives</h4>
+        <p>
+          This course provides students with a comprehensive introduction to the fundamentals of Generative
+          Artificial Intelligence (GenAI), with a particular focus on image synthesis. It is designed to
+          cultivate both theoretical understanding and practical implementation skills, while encouraging
+          students to critically examine the applications of GenAI across diverse domains. By engaging with
+          state-of-the-art models and techniques, students will explore the current limitations and
+          challenges of GenAI, as well as emerging research trends and potential future directions in image
+          generation.
+        </p>
+        <p>
+          To strengthen the connection between theory and practice, the course features joint instruction
+          with <strong>Dr. Chia-Min Cheng</strong>, Senior Expert from AI Technology Division of
+          <strong>MediaTek</strong>, who will share cutting-edge industry insights. His lectures will bridge
+          academic concepts with real-world product development, highlighting both technical challenges and
+          commercial opportunities.
+        </p>
+        <ul>
+          <li>Acquire foundational knowledge and technical skills in generative AI and image synthesis.</li>
+          <li>Demonstrate sensitivity to emerging technologies and the ability to critically analyze new trends.</li>
+          <li>Conduct independent research and development projects, while also contributing effectively to team collaboration and project management.</li>
+          <li>Apply innovative thinking and problem-solving skills to advance technological innovation and create broader societal impact.</li>
+        </ul>
+
+        <h4>Prerequisites</h4>
+        <ul>
+          <li><strong>Programming Proficiency in Python</strong>
+            <ul>
+              <li>All assignments will be implemented in Python. Students with extensive programming experience in other languages (e.g., C++, Matlab, or JavaScript) should still be able to adapt.</li>
+            </ul>
+          </li>
+          <li><strong>Mathematics Foundations</strong>
+            <ul>
+              <li>Calculus and Linear Algebra: Ability to take derivatives, and familiarity with matrix–vector operations and notation.</li>
+              <li>Probability and Statistics: Understanding of basic probability concepts, Gaussian distributions, mean, standard deviation, and related statistical measures.</li>
+            </ul>
+          </li>
+          <li><strong>Deep Learning / Machine Learning</strong></li>
+        </ul>
+
+        <h4>Grading</h4>
+        <ul>
+          <li><strong>Assignments (20%)</strong> — Including programming assignments, literature review reports, etc.</li>
+          <li><strong>Midterm Report (30%)</strong> — Students need to select a GenAI-related paper from the past three years and write a research report. The report should include Background, Motivation, Proposed Method, Result, and Personal Reflection. Additional points will be awarded for including a demo and technical implementation in the report.</li>
+          <li><strong>Final Project (40%)</strong> — Including project presentation and final project report. Students are required to select a GenAI-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.</li>
+          <li><strong>Class Participation (10%)</strong> — For each absence during roll call: −1 for the final grade.</li>
+        </ul>
+
+        <h4>Office Hours</h4>
+        <ul>
+          <li>Monday 11:00–12:00 am</li>
+          <li>Room: Engineering Building-6 (374)</li>
+        </ul>
+
+        <h4>Schedule</h4>
+        <div class="schedule-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Wk</th><th>Date</th><th>Topic</th><th>Slides</th><th>Homework</th><th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td><td>9/4</td><td>Class Introduction and Overview</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1D0rdZOYLCSVgnfzXCNXQoTobzbv74FCY" target="_blank" rel="noopener">Lec0</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>2</td><td>9/11</td><td>Introduction of GenAI</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1oLJrPywX5gybf10yzUP8dFvI8IfbaiAm" target="_blank" rel="noopener">Lec1</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>3</td><td>9/18</td><td>Overview of Vision Generative Models</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1wUBgrU-jRDxfrDt0YOu_mUsDWupdQfHx" target="_blank" rel="noopener">Lec2</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>4</td><td>9/25</td><td>Autoencoder</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1eKK8npyWViZE29TK1lRZsR-PmBzI4e-N" target="_blank" rel="noopener">Lec3</a></td>
+                <td></td><td>Group Form Due</td>
+              </tr>
+              <tr>
+                <td>5</td><td>10/2</td><td>Basic Principles and Concepts of GANs</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1J0IH8FMbUIQiyH4rOFA6euu8mau66bwy" target="_blank" rel="noopener">Lec4</a></td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1Q00TaTu634lB644qh5s5_7LIt_VuSUJh" target="_blank" rel="noopener">HW1</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6</td><td>10/9</td><td>Applications and Developments of GANs</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1wjwNp1Fkb6VXDzyQjTCbd4L0wgoBUm8t" target="_blank" rel="noopener">Lec5</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>7</td><td>10/16</td><td>Basic Principles and Concepts of DMs</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1G9_YMPqGntzIp87izNEAUJaC1qTlwAtP" target="_blank" rel="noopener">Lec6</a></td>
+                <td></td><td>HW1 Due</td>
+              </tr>
+              <tr>
+                <td>8</td><td>10/23</td><td>Special Lecture</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>9</td><td>10/30</td><td>Midterm Report</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>10</td><td>11/6</td><td>Applications and Developments of DMs</td>
+                <td></td><td></td><td>Midterm Report Due</td>
+              </tr>
+              <tr>
+                <td>11</td><td>11/13</td><td>3D Vision</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1hQgTpjGsbUfjydoqMcElBlYpNCJKSBue" target="_blank" rel="noopener">Lec7</a></td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1QrLmWyIol57eX51brsJ69ZV-pKUpjVOc" target="_blank" rel="noopener">HW2</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12</td><td>11/20</td><td>GenAI Application in Industry — Mobile, Automotive, AR/VR</td>
+                <td>Lec8</td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>13</td><td>11/27</td><td>3D Visual Effects</td>
+                <td>Lec9</td><td></td><td>HW2 Due</td>
+              </tr>
+              <tr>
+                <td>14</td><td>12/4</td><td>Mixed Reality</td>
+                <td>Lec10</td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>15</td><td>12/11</td><td>VLM &amp; LMM</td>
+                <td>Lec11</td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>16</td><td>12/18</td><td>Final Project Presentation</td>
+                <td></td><td></td><td>Final Report Due</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+
+    <!-- Course 3: Artificial Intelligence -->
+    <article class="course-card" id="teaching-ai">
+      <header class="course-head">
+        <h3 class="course-title">Artificial Intelligence <span style="font-family:'Inter',sans-serif;font-size:.68rem;color:var(--muted);letter-spacing:.1em;font-weight:500;">(IIAI30017)</span></h3>
+        <div class="course-meta">
+          <span class="course-chip type">Graduate Course</span>
+          <span class="course-chip">Fall 2024</span>
+          <span class="course-chip">Institute of AI Innovation, NYCU</span>
+          <span class="course-chip">Hsinchu, Taiwan</span>
+        </div>
+      </header>
+      <div class="course-body">
+        <h4>Course Overview &amp; Objectives</h4>
+        <p>
+          This course, Artificial Intelligence (IIAI30017), offers students a comprehensive introduction to
+          the fundamental concepts, techniques, and applications of artificial intelligence (AI). Through
+          lectures, programming assignments, literature reviews, and project-based learning, students will
+          gain both theoretical understanding and practical skills in AI.
+        </p>
+        <ul>
+          <li>Provide a strong foundation in core AI principles, including search, knowledge representation, reasoning, probability, and machine learning.</li>
+          <li>Develop proficiency in Python programming for AI applications, reinforcing concepts through practical assignments.</li>
+          <li>Enhance students' ability to critically read, evaluate, and present recent AI research papers.</li>
+          <li>Cultivate problem-solving skills through a midterm report and a final project, encouraging creativity, innovation, and technical rigor.</li>
+          <li>Equip students with hands-on experience in developing AI solutions that bridge theory and practice, with additional focus on demos and implementations.</li>
+          <li>Encourage teamwork, communication, and class participation, preparing students to engage in both academic and industrial AI contexts.</li>
+        </ul>
+
+        <h4>Prerequisites</h4>
+        <ul>
+          <li><strong>Programming Proficiency in Python</strong>
+            <ul>
+              <li>All assignments will be implemented in Python. Students with extensive programming experience in other languages (e.g., C++, Matlab, or JavaScript) should still be able to adapt.</li>
+            </ul>
+          </li>
+          <li><strong>Mathematics Foundations</strong>
+            <ul>
+              <li>Calculus and Linear Algebra: Ability to take derivatives, and familiarity with matrix–vector operations and notation.</li>
+              <li>Probability and Statistics: Understanding of basic probability concepts, Gaussian distributions, mean, standard deviation, and related statistical measures.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Grading</h4>
+        <ul>
+          <li><strong>Assignments (30%)</strong> — Including programming assignments, literature review reports, etc.</li>
+          <li><strong>Midterm Report (20%)</strong> — Students need to select an AI-related paper from the past three years and write a research report. The report should include Background, Motivation, Proposed Method, Result, and Personal Reflection. Additional points will be awarded for including a demo and technical implementation in the report.</li>
+          <li><strong>Final Project (40%)</strong> — Including project presentation and final project report. Students are required to select an AI-related topic, develop a proposal, and undertake an implementation project. The evaluation criteria encompass a thorough comprehension of the problem, innovation, practicality of the solution, completeness, and performance of the technical implementation. Additional credit will be awarded for incorporating a demo and technical implementation.</li>
+          <li><strong>Class Participation (10%)</strong> — For each absence during roll call: −1 for the final grade.</li>
+        </ul>
+
+        <h4>Office Hours</h4>
+        <ul>
+          <li>Monday 11:00–12:00 am</li>
+          <li>Room: Engineering Building-6 (374)</li>
+        </ul>
+
+        <h4>Schedule</h4>
+        <div class="schedule-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Wk</th><th>Date</th><th>Topic</th><th>Slides</th><th>Homework</th><th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td><td>9/2</td><td>Class Introduction and Overview</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1qrZLys9jPn36Dp4h-2PnYfDN9-tJ-mIT" target="_blank" rel="noopener">Lec0</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>2</td><td>9/9</td><td>Introduction of Artificial Intelligence / Python Tutorial</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=16MM_5dvqtFNAacdHl61EgTfMOnGaHXcY" target="_blank" rel="noopener">Lec1</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>3</td><td>9/16</td><td>Informed Search</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1FDuzoijjGEa6KqciIUbDkw5AS9eohHj-" target="_blank" rel="noopener">Lec2</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>4</td><td>9/23</td><td>Evolutionary Algorithms 1</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1r77UzR_s-xnirH3VtclmClBIfk0bDnZs" target="_blank" rel="noopener">Lec3</a></td>
+                <td><a href="https://github.com/Rossi-Laboratory/Course-Lectures/tree/main/AI/Assignment1" target="_blank" rel="noopener">HW1: Greedy Best-First Search</a></td>
+                <td>Group Form Due</td>
+              </tr>
+              <tr>
+                <td>5</td><td>9/30</td><td>Evolutionary Algorithms 2</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>6</td><td>10/7</td><td>Local Search Methods</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1KG0FeSMB0W2_0uRiNf4oDTSAMs53JQ35" target="_blank" rel="noopener">Lec4</a></td>
+                <td></td><td>HW1 Due</td>
+              </tr>
+              <tr>
+                <td>7</td><td>10/14</td><td>Swarm Intelligence 1</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1GD0cykErTYbXVX99b2QtfnX99q4z6Y74" target="_blank" rel="noopener">Lec5</a></td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1QSzbJg_zvk_bXo8pUCuzTru01zav5Pvz" target="_blank" rel="noopener">HW2: GA</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>8</td><td>10/21</td><td>Swarm Intelligence 2</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>9</td><td>10/28</td><td>Midterm Report</td>
+                <td></td><td></td><td>HW2 Due</td>
+              </tr>
+              <tr>
+                <td>10</td><td>11/4</td><td>Neural Networks</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1WHk5n_7I4VdVIx9vn6r11WOFBIOx5fwN" target="_blank" rel="noopener">Lec6</a></td>
+                <td></td><td>Midterm Report Due</td>
+              </tr>
+              <tr>
+                <td>11</td><td>11/11</td><td>Convolutional Architecture</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=14Ns7jmV0XGfxWECJxSU9AW8_bBssQObP" target="_blank" rel="noopener">Lec7</a></td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td>12</td><td>11/18</td><td>Training Neural Networks 1</td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1i2qhZEDAgIveQwCgQXEG2lCUvlsNHt0L" target="_blank" rel="noopener">Lec8</a></td>
+                <td><a href="https://drive.google.com/uc?export=view&amp;id=1S_fRrfmGC6GWTHGknVfPfnjaDs41yevE" target="_blank" rel="noopener">HW3: Neural Networks</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>13</td><td>11/25</td><td>Training Neural Networks 2</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>14</td><td>12/2</td><td>3D Vision</td>
+                <td>Lec9</td><td></td><td>HW3 Due</td>
+              </tr>
+              <tr>
+                <td>15</td><td>12/9</td><td>Final Project Presentation</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>16</td><td>12/16</td><td>Special Lecture</td>
+                <td></td><td></td><td>Final Report Due</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Textbook</h4>
+        <ul>
+          <li><a href="https://people.engr.tamu.edu/guni/csce642/files/AI_Russell_Norvig.pdf" target="_blank" rel="noopener">Artificial Intelligence: A Modern Approach</a></li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
 <!-- PUBLICATIONS -->
 <section id="publications">
   <div class="section-head reveal">
-    <div class="eyebrow">04 — Publications</div>
+    <div class="eyebrow">05 — Publications</div>
     <h2 class="section-title">Publications</h2>
     <p class="section-sub">Peer-reviewed papers, journal articles, and competition entries — in reverse chronological order.</p>
   </div>
@@ -1447,7 +2111,7 @@
 <!-- AWARDS -->
 <section id="awards">
   <div class="section-head reveal">
-    <div class="eyebrow">05 — Recognition</div>
+    <div class="eyebrow">06 — Recognition</div>
     <h2 class="section-title">Awards &amp; Honors</h2>
     <p class="section-sub">Selected distinctions and service roles.</p>
   </div>
@@ -1500,7 +2164,7 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-head reveal">
-    <div class="eyebrow">06 — Contact</div>
+    <div class="eyebrow">07 — Contact</div>
     <h2 class="section-title">Get in Touch</h2>
     <p class="section-sub">Open to collaborations, student applications, and speaking invitations.</p>
   </div>
