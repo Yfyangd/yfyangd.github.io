@@ -949,6 +949,20 @@
       line-height:1.4;
       margin-bottom:.15rem;
     }
+    .award-title a{
+      color:inherit;
+      text-decoration:none;
+      background-image:linear-gradient(currentColor,currentColor);
+      background-size:0 1px;
+      background-repeat:no-repeat;
+      background-position:0 100%;
+      transition:background-size .3s ease, color .2s ease;
+    }
+    .award-title a:hover,
+    .award-title a:focus-visible{
+      color:var(--accent);
+      background-size:100% 1px;
+    }
     .award-meta{
       font-family:'Inter',sans-serif;
       font-size:.78rem;
@@ -2142,6 +2156,13 @@
     <p class="section-sub">Selected distinctions and service roles.</p>
   </div>
   <div class="awards-grid reveal">
+    <div class="award-card">
+      <div class="award-icon" aria-hidden="true"><i class="fas fa-chalkboard-teacher"></i></div>
+      <div>
+        <div class="award-title"><a href="https://aa.nycu.edu.tw/aa/ch/app/data/image?module=nycu0131&amp;detailNo=1539903572085313536&amp;init=N" target="_blank" rel="noopener">Outstanding Teaching Award</a></div>
+        <div class="award-meta">NYCU · 2026</div>
+      </div>
+    </div>
     <div class="award-card">
       <div class="award-icon" aria-hidden="true"><i class="fas fa-trophy"></i></div>
       <div>
